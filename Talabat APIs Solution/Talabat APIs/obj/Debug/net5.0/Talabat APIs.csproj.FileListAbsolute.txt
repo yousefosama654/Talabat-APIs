@@ -1,0 +1,28 @@
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\appsettings.Development.json
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\appsettings.json
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.exe
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.deps.json
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.runtimeconfig.json
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.runtimeconfig.dev.json
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat APIs.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.csproj.AssemblyReference.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.AssemblyInfoInputs.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.AssemblyInfo.cs
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.csproj.CoreCompileInputs.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.MvcApplicationPartsAssemblyInfo.cs
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.MvcApplicationPartsAssemblyInfo.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\scopedcss\bundle\Talabat APIs.styles.css
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\staticwebassets\Talabat APIs.StaticWebAssets.Manifest.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.RazorTargetAssemblyInfo.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.csproj.CopyComplete
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\refint\Talabat APIs.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.genruntimeconfig.cache
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\ref\Talabat APIs.dll

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "p1zelMyHxMsTdAdcstCJsaeyGtUlvLL2WOR2uT1Dare1nsxUh/yngCod+Yixspu0ut0gP43dN83/Pni+qY4S6A==",
+  "success": true,
+  "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat APIs\\Talabat APIs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
