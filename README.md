@@ -44,7 +44,7 @@
 
 #### Get Product By Id
 
-```http
+```
   GET /api/Products/${id}
 ```
 
