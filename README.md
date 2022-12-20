@@ -31,3 +31,23 @@
    - The Service layer holds interfaces with common operations, such as Add, Save, Edit, and Delete. Also, this layer is used to communicate between the UI layer and repository layer. The Service layer also could hold business logic for an entity. In this layer, service interfaces are kept separate from its implementation, keeping loose coupling and separation of concerns in mind.
 - `Presentation Layer`
    - It’s the outer-most layer, and keeps peripheral concerns like UI and tests. For a Web application, it represents the Web API or Unit Test project. This layer has an implementation of the dependency injection principle so that the application builds a loosely coupled structure and can communicate to the internal layer via interfaces.
+
+## API Documnetation
+
+#### Get all Products
+
+```http
+  GET /api/Products
+```
+
+
+
+#### Get Product By Id
+
+```http
+  GET /api/Products/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `int   ` | **Required**. Id of Product to fetch |
