@@ -25,7 +25,7 @@
 ```bash
   Just clone the project
   Run on Visual Studio
-  Test endpoints on Postman :blush: 
+  Test endpoints on Postman 
 ```
     
 
