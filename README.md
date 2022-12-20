@@ -18,6 +18,16 @@
 - Support other version Control Systems.
 
 
+## Installation
+
+- Install Talabat Project with Visual Studio
+
+```bash
+  Just clone the project
+  Run on Visual Studio
+  Test endpoints on Postman :blush: 
+```
+    
 
 ## What are the Layers of the Onion Architecture?
  - Onion Architecture uses the concept of layers, but they are different from 3-tier and n-tier architecture layers. Let’s see what each of these layers represents and should contain.
