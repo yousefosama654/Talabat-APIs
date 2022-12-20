@@ -55,7 +55,7 @@
 #### Get Product By Id
 
 ```
-  GET /api/Products/${id}
+  - GET /api/Products/${id}
 ```
 
 | Parameter | Type     | Description                       |
