@@ -60,4 +60,4 @@
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required**  Id of Product to fetch |
+| `id`      | `int   ` | **Required ID** of Product to fetch |
