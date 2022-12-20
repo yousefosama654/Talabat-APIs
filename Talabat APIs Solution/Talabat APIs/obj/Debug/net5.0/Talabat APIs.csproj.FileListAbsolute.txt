@@ -26,3 +26,39 @@ D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debu
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.pdb
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\Talabat APIs.genruntimeconfig.cache
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\obj\Debug\net5.0\ref\Talabat APIs.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Humanizer.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.core.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Repository.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Repository.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.core.pdb
