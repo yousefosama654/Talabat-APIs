@@ -13,7 +13,7 @@ namespace Talabat_APIs
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             // it holds the kestrel
             var host = CreateHostBuilder(args).Build();
@@ -25,7 +25,8 @@ namespace Talabat_APIs
             try
             {
                 var context = services.GetRequiredService<StoreContext>();
-                context.Database.MigrateAsync();
+                await StoreContextSeed.SeedAsync(loggerfactory, context);
+                await context.Database.MigrateAsync();
             }
             catch (Exception ex)
             {

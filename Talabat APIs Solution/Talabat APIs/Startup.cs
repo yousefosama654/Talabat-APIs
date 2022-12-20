@@ -12,6 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Talabat.core.Repositories;
+using Talabat.Repository;
 using Talabat.Repository.Data;
 
 namespace Talabat_APIs
@@ -39,6 +41,7 @@ namespace Talabat_APIs
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
