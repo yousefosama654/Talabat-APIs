@@ -36,7 +36,7 @@
 
 #### Get all Products
 
-```http
+```
   GET /api/Products
 ```
 
