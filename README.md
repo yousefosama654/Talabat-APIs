@@ -18,6 +18,16 @@
 - Support other version Control Systems.
 
 
+## Installation
+
+- Install Talabat Project with Visual Studio
+
+```bash
+  Just clone the project
+  Run on Visual Studio
+  Test endpoints on Postman 
+```
+    
 
 ## What are the Layers of the Onion Architecture?
  - Onion Architecture uses the concept of layers, but they are different from 3-tier and n-tier architecture layers. Let’s see what each of these layers represents and should contain.
@@ -31,3 +41,23 @@
    - The Service layer holds interfaces with common operations, such as Add, Save, Edit, and Delete. Also, this layer is used to communicate between the UI layer and repository layer. The Service layer also could hold business logic for an entity. In this layer, service interfaces are kept separate from its implementation, keeping loose coupling and separation of concerns in mind.
 - `Presentation Layer`
    - It’s the outer-most layer, and keeps peripheral concerns like UI and tests. For a Web application, it represents the Web API or Unit Test project. This layer has an implementation of the dependency injection principle so that the application builds a loosely coupled structure and can communicate to the internal layer via interfaces.
+
+## API Documnetation
+
+#### Get all Products
+
+```
+  GET /api/Products
+```
+
+
+
+#### Get Product By Id
+
+```
+  GET /api/Products/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `int   ` | **Required ID** of Product to fetch |
