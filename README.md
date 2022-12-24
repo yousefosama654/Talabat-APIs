@@ -3,7 +3,10 @@
 
 # Talabat APIs
 
- - This is a Talabat Clone Project built in in Onion Architecture
+ - This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
+
+- Repository Design Pattern.
+- Specification Design Pattern.
 
 
 
@@ -16,7 +19,9 @@
 
 - Work on Mac,Linux and Windows.
 - Support other version Control Systems.
-
+- Implements open for extension closed for modification Principle (OCP).
+- Handling with all error types and validations.
+- Using Lazy and Eager Loading Techniques.
 
 ## Installation
 
