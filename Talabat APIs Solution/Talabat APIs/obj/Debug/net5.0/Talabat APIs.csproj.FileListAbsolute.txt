@@ -62,3 +62,9 @@ D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debu
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Repository.dll
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Repository.pdb
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.core.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\AutoMapper.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

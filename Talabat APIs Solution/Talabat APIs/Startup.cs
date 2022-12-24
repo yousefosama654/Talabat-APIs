@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Talabat.core.Repositories;
 using Talabat.Repository;
 using Talabat.Repository.Data;
+using Talabat_APIs.Helpers;
 
 namespace Talabat_APIs
 {
@@ -41,7 +42,8 @@ namespace Talabat_APIs
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddAutoMapper(typeof(MappingProfiles));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +57,7 @@ namespace Talabat_APIs
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseAuthorization();
