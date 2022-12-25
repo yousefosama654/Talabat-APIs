@@ -22,7 +22,7 @@
 - Implements open for extension closed for modification Principle (OCP).
 - Handling with all error types and validations(400-401-404-500).
 - Using Lazy and Eager Loading Techniques.
--Adding Custom Middlewares for Authentication and Authoriziation.
+- Adding Custom Middlewares for Authentication and Authoriziation.
 ## Installation
 
 - Install Talabat Project with Visual Studio
