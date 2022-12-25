@@ -58,7 +58,7 @@ GET /api/Products?sort=${price}
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `sort`    | `string` | **Required**. to sort the products by price or name in descending or ascending  order|
+| `sort`    | `string` | **Not Required**. to sort the products by price or name in descending or ascending  order|
 
 
 #### Get Product By Id
