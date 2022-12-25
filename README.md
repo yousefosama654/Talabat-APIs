@@ -53,9 +53,12 @@
 #### Get all Products
 
 ```http
-GET /api/Products
+GET /api/Products?sort=${price}
 ```
 
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `sort`    | `string` | **Required**. to sort the products by price or name in descending or ascending  order|
 
 
 #### Get Product By Id
@@ -66,4 +69,4 @@ GET /api/Products/${id}
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required ID** of Product to fetch |
+| `id`      | `int   ` | **Required**. of Product to fetch |
