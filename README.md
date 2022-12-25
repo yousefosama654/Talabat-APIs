@@ -61,7 +61,7 @@ GET /api/Products
 #### Get Product By Id
 
 ```http
-  GET /api/Products/${id}
+GET /api/Products/${id}
 ```
 
 | Parameter | Type     | Description                       |
