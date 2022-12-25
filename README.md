@@ -52,7 +52,7 @@
 
 #### Get all Products
 
-```
+```http
   GET /api/Products
 ```
 
@@ -60,7 +60,7 @@
 
 #### Get Product By Id
 
-```
+```http
   GET /api/Products/${id}
 ```
 
