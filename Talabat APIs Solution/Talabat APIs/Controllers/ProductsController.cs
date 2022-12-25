@@ -14,7 +14,6 @@ namespace Talabat_APIs.Controllers
     {
         public IGenericRepository<Product> IGenericRepository { get; }
         public IMapper Mapper { get; }
-
         public ProductsController(IGenericRepository<Product> IGenericRepository,IMapper mapper)
         {
             this.IGenericRepository = IGenericRepository;

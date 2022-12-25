@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,10 @@ using System.Threading.Tasks;
 using Talabat.core.Repositories;
 using Talabat.Repository;
 using Talabat.Repository.Data;
+using Talabat_APIs.Errors;
+using Talabat_APIs.Extensions;
 using Talabat_APIs.Helpers;
+using Talabat_APIs.Middlewares;
 
 namespace Talabat_APIs
 {
@@ -27,23 +31,18 @@ namespace Talabat_APIs
         }
 
         public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             // to enable the service of web api
             services.AddControllers();
             //to enable the documentation of the api project (API Support)
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Talabat_APIs", Version = "v1" });
-            });
+            services.AddSwaggerServices();
             services.AddDbContext<StoreContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddAutoMapper(typeof(MappingProfiles));
+            services.AddApplicationServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,9 +50,9 @@ namespace Talabat_APIs
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Talabat_APIs v1"));
+                //app.UseDeveloperExceptionPage();
+                app.UseMiddleware<ExceptionMiddleware>();
+                app.UseSwaggerDocumentation();
             }
 
             app.UseHttpsRedirection();
