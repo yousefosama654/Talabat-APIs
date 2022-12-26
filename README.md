@@ -7,6 +7,7 @@
 
 - Repository Design Pattern.
 - Specification Design Pattern.
+- UnitOfWork Design Pattern.
 
 
 
@@ -51,18 +52,54 @@
 
 #### Get all Products
 
-```
-  GET /api/Products
-```
-
-
-
-#### Get Product By Id
-
-```
-  GET /api/Products/${id}
+```http
+GET /api/Products?sort=${price}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required ID** of Product to fetch |
+| `sort`    | `string` | **Not Required**. to sort the products by price or name in descending or ascending  order|
+
+
+#### Get Product By Id
+
+```http
+GET /api/Products/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `int   ` | **Required**. of Product to fetch |
+
+
+
+## Responses
+
+Many API endpoints return the JSON representation of the resources created or edited. However, if an invalid request is submitted, or some other error occurs, Talabat returns a JSON response in the following format:
+
+```javascript
+{
+  "message" : string,
+  "statusCode" : int,
+  "Details"    : string
+}
+```
+
+The `message` attribute contains a message commonly used to indicate errors.
+
+The `statusCode` attribute describes the code of the response due to the follwing Status Codes Table.
+
+The `Details` attribute contains error message only in developing env and in case of internal server error(500).
+
+## Status Codes
+
+Talabat returns the following status codes in its API:
+
+| Status Code | Description |
+| :--- | :--- |
+| 200 | `OK` |
+| 400 | `BAD REQUEST` |
+| 401 | `UNAUTHORIZED` |
+| 404 | `NOT FOUND` |
+| 500 | `INTERNAL SERVER ERROR` |
+
