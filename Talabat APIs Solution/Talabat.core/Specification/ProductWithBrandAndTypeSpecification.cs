@@ -9,8 +9,11 @@ namespace Talabat.core.Specification
     public class ProductWithBrandAndTypeSpecification : BaseSpecification<Product>
     {
         // we will add the includes of related data of Product here 
-        public ProductWithBrandAndTypeSpecification(ProductsSpecParams productsSpecParams) :
-            base(p => (!productsSpecParams.TypeId.HasValue || p.ProductTypeId == productsSpecParams.TypeId) && (!productsSpecParams.BrandId.HasValue || p.ProductBrandId == productsSpecParams.BrandId))
+        public ProductWithBrandAndTypeSpecification(ProductsSpecParams productsSpecParams) :base(p=>
+            (string.IsNullOrEmpty(productsSpecParams.search) ||p.Name.ToLower().Contains(productsSpecParams.search.ToLower()))&&
+            (!productsSpecParams.BrandId.HasValue || productsSpecParams.BrandId == p.ProductBrandId) &&
+            (!productsSpecParams.TypeId.HasValue || productsSpecParams.TypeId==p.ProductTypeId)
+            )
         {
             this.Includes.Add(p => p.ProductBrand);
             this.Includes.Add(p => p.ProductType);

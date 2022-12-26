@@ -21,6 +21,7 @@ namespace Talabat.core.Specification
         public int? TypeId { get; set; }
         public int? BrandId { get; set; }
         public string sort { get; set; }
+        public string search { get; set; }
 
     }
 }

@@ -8,6 +8,7 @@ using Talabat.core.Entities;
 using Talabat.core.Repositories;
 using Talabat.core.Specification;
 using Talabat_APIs.Dtos;
+using Talabat_APIs.Helpers;
 
 namespace Talabat_APIs.Controllers
 {
@@ -33,7 +34,11 @@ namespace Talabat_APIs.Controllers
         {
             var specs = new ProductWithBrandAndTypeSpecification(productsSpecParams);
             var products = await this.ProductRepository.GetAllWithSpecsAsync(specs);
-            return Ok(Mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(products));
+            var data = Mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(products);
+            var countSpecs = new ProductSpecificationFilterCount(productsSpecParams);
+            var count= await this.ProductRepository.GetCountAsync(countSpecs);
+            var PaginatedData = new Pagination<ProductDto>(data, productsSpecParams.PageSize, productsSpecParams.PageIndex, count);
+            return Ok(PaginatedData);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProductById(int id)
