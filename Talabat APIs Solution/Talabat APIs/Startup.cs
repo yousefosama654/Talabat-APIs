@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,6 @@ using Talabat_APIs.Errors;
 using Talabat_APIs.Extensions;
 using Talabat_APIs.Helpers;
 using Talabat_APIs.Middlewares;
-
 namespace Talabat_APIs
 {
     public class Startup
@@ -37,12 +37,18 @@ namespace Talabat_APIs
             // to enable the service of web api
             services.AddControllers();
             //to enable the documentation of the api project (API Support)
-            services.AddSwaggerServices();
             services.AddDbContext<StoreContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddScoped(s =>
+            {
+                var connection = ConfigurationOptions.Parse(Configuration.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(connection);
+            });
+
             services.AddApplicationServices();
+            services.AddSwaggerServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

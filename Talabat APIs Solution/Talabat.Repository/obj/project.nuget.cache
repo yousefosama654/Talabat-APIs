@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q79KfaTnTsRXrhBJk0KSIU4E8s4Y15OSiCUhsTP+wLtF6nrii3ORwe3GoSCWxq4XnNASiNcxVIlfnDomhyPAyA==",
+  "dgSpecHash": "Prwij2N9JXPfjLzS8Rs6l0gYrDeQpvy25L1c2AILqJdkpa5ylABwWCa40A8Z1UQyami0RpE6AL2IYMX4m6F6Gg==",
   "success": true,
   "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat.Repository\\Talabat.Repository.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,9 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
@@ -55,6 +57,7 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",

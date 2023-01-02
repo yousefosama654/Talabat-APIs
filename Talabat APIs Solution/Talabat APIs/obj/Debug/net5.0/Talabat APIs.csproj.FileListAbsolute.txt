@@ -68,3 +68,6 @@ D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debu
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Pipelines.Sockets.Unofficial.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\StackExchange.Redis.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\System.IO.Pipelines.dll
