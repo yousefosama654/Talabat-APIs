@@ -12,7 +12,8 @@ namespace Talabat.Repository
 {
     public class BasketRepository : IBasketRepository
     {
-        public IDatabase db { get; set; }
+        private readonly IDatabase db;
+
         public BasketRepository(IConnectionMultiplexer redis)
         {
             db = redis.GetDatabase();
@@ -28,7 +29,7 @@ namespace Talabat.Repository
             var basket = await db.StringGetAsync(Id);
             return basket.IsNullOrEmpty ? null : JsonSerializer.Deserialize<CustomerBasket>(basket);
         }
-        // it is used to update or delete the customer basket
+        // it is used to update or create the customer basket
         public async Task<CustomerBasket> UpdateBasketAsync(CustomerBasket CustomerBasket)
         {
             var basket = await db.StringSetAsync(CustomerBasket.Id, JsonSerializer.Serialize(CustomerBasket),TimeSpan.FromDays(30));

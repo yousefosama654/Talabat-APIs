@@ -10,7 +10,10 @@ namespace Talabat.core.Entities
     {
         public CustomerBasket(string id)
         {
-            Id = id;
+            this.Id = id;
+        }
+        public CustomerBasket()
+        {
         }
 
         // will be guid so will not inherit from the class basentity

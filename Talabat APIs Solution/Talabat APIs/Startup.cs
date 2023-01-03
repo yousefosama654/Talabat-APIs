@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 using Talabat.core.Repositories;
 using Talabat.Repository;
 using Talabat.Repository.Data;
+using Talabat.Repository.Identity;
 using Talabat_APIs.Errors;
 using Talabat_APIs.Extensions;
 using Talabat_APIs.Helpers;
@@ -41,7 +42,12 @@ namespace Talabat_APIs
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-            services.AddScoped(s =>
+            services.AddDbContext<AppIdentityContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"));
+            });
+
+            services.AddSingleton<IConnectionMultiplexer>(s =>
             {
                 var connection = ConfigurationOptions.Parse(Configuration.GetConnectionString("Redis"));
                 return ConnectionMultiplexer.Connect(connection);
@@ -49,6 +55,9 @@ namespace Talabat_APIs
 
             services.AddApplicationServices();
             services.AddSwaggerServices();
+            services.AddIdentityServices();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Prwij2N9JXPfjLzS8Rs6l0gYrDeQpvy25L1c2AILqJdkpa5ylABwWCa40A8Z1UQyami0RpE6AL2IYMX4m6F6Gg==",
+  "dgSpecHash": "cWeI3NvlxZ/Y9JZeOsEWsq2XMcfAYuCleDvZz8qgnxz+uh1zsY3IdD4P+yBBj5MpFbHatfw4MvkXOQ9LiK8u0g==",
   "success": true,
   "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat.Repository\\Talabat.Repository.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.17\\microsoft.aspnetcore.cryptography.keyderivation.5.0.17.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.17\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -17,6 +20,8 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.17\\microsoft.extensions.identity.core.5.0.17.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.17\\microsoft.extensions.identity.stores.5.0.17.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
