@@ -49,7 +49,7 @@
    - It’s the outer-most layer, and keeps peripheral concerns like UI and tests. For a Web application, it represents the Web API or Unit Test project. This layer has an implementation of the dependency injection principle so that the application builds a loosely coupled structure and can communicate to the internal layer via interfaces.
 
 ## API Documnetation
-
+`Product Entity`
 #### Get all Products
 
 ```http
