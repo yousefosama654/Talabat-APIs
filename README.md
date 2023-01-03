@@ -67,9 +67,9 @@ GET /api/Products?sort=${price}
 GET /api/Products/${id}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required**. of Product to fetch. |
+| Parameter | Type     |  Status   | Description                       |
+| :-------- | :------- |  :------- | :-------------------------------- |
+| `id`      | `int   ` | **Required**| Id of Product to fetch. |
 
 - `Basket`
 #### Get Basket By Id
@@ -78,9 +78,9 @@ GET /api/Products/${id}
 GET /api/Basket?Id=${id}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `Id`    | `string` | **Required**.of Basket to fetch.|
+| Parameter | Type     |  Status   | Description                       |
+| :-------- | :------- | :-------  | :-------------------------------- |
+| `Id`    | `string` | **Required**|.Id of Basket to fetch.|
 
 #### create or update Basket
 
@@ -109,7 +109,7 @@ DELETE /api/Basket?Id=${id}
 
 | Parameter | Type     | Status   |     Description                       |
 | :-------- | :------- | :------- | :--------------------------------     |
-| `Id`    | `string` | **Required**.of Basket to be delete.|
+| `Id`    | `string` | **Required**| Id of Basket to be deleted.|
 
 
 
