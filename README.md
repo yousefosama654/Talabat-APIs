@@ -49,16 +49,16 @@
    - It’s the outer-most layer, and keeps peripheral concerns like UI and tests. For a Web application, it represents the Web API or Unit Test project. This layer has an implementation of the dependency injection principle so that the application builds a loosely coupled structure and can communicate to the internal layer via interfaces.
 
 ## API Documnetation
-
+- `Products`
 #### Get all Products
 
 ```http
 GET /api/Products?sort=${price}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `sort`    | `string` | **Not Required**. to sort the products by price or name in descending or ascending  order|
+| Parameter | Type     | Status     | Description                       |
+| :-------- | :------- | :-------   | :-------------------------------- |
+| `sort`    | `string` | **Not Required**| to sort the products by price or name in descending or ascending  order|
 
 
 #### Get Product By Id
@@ -67,9 +67,49 @@ GET /api/Products?sort=${price}
 GET /api/Products/${id}
 ```
 
+| Parameter | Type     |  Status   | Description                       |
+| :-------- | :------- |  :------- | :-------------------------------- |
+| `id`      | `int   ` | **Required**| Id of Product to fetch. |
+
+- `Basket`
+#### Get Basket By Id
+
+```http
+GET /api/Basket?Id=${id}
+```
+
+| Parameter | Type     |  Status   | Description                       |
+| :-------- | :------- | :-------  | :-------------------------------- |
+| `Id`    | `string` | **Required**|.Id of Basket to fetch.|
+
+#### create or update Basket
+
+```http
+POST /api/Basket?Id=${id}
+```
+
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required**. of Product to fetch |
+| `Id`    | `string` | **Required**.of Basket to fetch.|
+| `Name`    | `string` | **Required**.of Basket to fetch.|
+| `Description`    | `string` | **Required**.of Basket to fetch.|
+| `PictureUrl`    | `string` | **Required**.of Basket to fetch.|
+| `Quantity`    | `int` | **Required**.of Basket to fetch.|
+| `Price`    | `decimal` | .of Basket to fetch.|
+| `Brand`    | `string` | **Required**.of Basket to fetch.|
+| `Type`    | `string` | **Required**.of Basket to fetch.|
+
+
+
+#### Delete Basket By Id
+
+```http
+DELETE /api/Basket?Id=${id}
+```
+
+| Parameter | Type     | Status   |     Description                       |
+| :-------- | :------- | :------- | :--------------------------------     |
+| `Id`    | `string` | **Required**| Id of Basket to be deleted.|
 
 
 
