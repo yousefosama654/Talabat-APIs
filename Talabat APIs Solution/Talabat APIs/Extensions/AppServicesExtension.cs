@@ -2,7 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using Talabat.core.Repositories;
+using Talabat.core.Servicecs;
 using Talabat.Repository;
+using Talabat.Service;
 using Talabat_APIs.Errors;
 using Talabat_APIs.Helpers;
 
@@ -13,6 +15,7 @@ namespace Talabat_APIs.Extensions
         // the return type due to  case of chaining 
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.AddScoped(typeof(ITokenService), typeof(TokenService));
             services.AddScoped(typeof(IBasketRepository), typeof(BasketRepository));
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddAutoMapper(typeof(MappingProfiles));
