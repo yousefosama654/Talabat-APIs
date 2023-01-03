@@ -56,9 +56,9 @@
 GET /api/Products?sort=${price}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `sort`    | `string` | **Not Required**. to sort the products by price or name in descending or ascending  order|
+| Parameter | Type     | Status     | Description                       |
+| :-------- | :------- | :-------   | :-------------------------------- |
+| `sort`    | `string` | **Not Required**| to sort the products by price or name in descending or ascending  order|
 
 
 #### Get Product By Id
@@ -69,7 +69,47 @@ GET /api/Products/${id}
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required**. of Product to fetch |
+| `id`      | `int   ` | **Required**. of Product to fetch. |
+
+- `Basket`
+#### Get Basket By Id
+
+```http
+GET /api/Basket?Id=${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `Id`    | `string` | **Required**.of Basket to fetch.|
+
+#### create or update Basket
+
+```http
+POST /api/Basket?Id=${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `Id`    | `string` | **Required**.of Basket to fetch.|
+| `Name`    | `string` | **Required**.of Basket to fetch.|
+| `Description`    | `string` | **Required**.of Basket to fetch.|
+| `PictureUrl`    | `string` | **Required**.of Basket to fetch.|
+| `Quantity`    | `int` | **Required**.of Basket to fetch.|
+| `Price`    | `decimal` | .of Basket to fetch.|
+| `Brand`    | `string` | **Required**.of Basket to fetch.|
+| `Type`    | `string` | **Required**.of Basket to fetch.|
+
+
+
+#### Delete Basket By Id
+
+```http
+DELETE /api/Basket?Id=${id}
+```
+
+| Parameter | Type     | Status   |     Description                       |
+| :-------- | :------- | :------- | :--------------------------------     |
+| `Id`    | `string` | **Required**.of Basket to be delete.|
 
 
 
