@@ -34,12 +34,12 @@
   ## Libraries Used And Packages
 <blockquote>
  
--StackExchange.Redis.
--Microsoft.EntityFrameworkCore.Tools.
--Microsoft.EntityFrameworkCore.SqlSer.
--Microsoft.AspNetCore.Identity.EntityFrameworkCore.
--AutoMapper.Extensions.Microsoft.DependencyInjection. 
--Microsoft.AspNetCore.Authentication.JwtBearer.
+- StackExchange.Redis.
+- Microsoft.EntityFrameworkCore.Tools.
+- Microsoft.EntityFrameworkCore.SqlSer.
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore.
+- AutoMapper.Extensions.Microsoft.DependencyInjection. 
+- Microsoft.AspNetCore.Authentication.JwtBearer.
 </blockquote>
  
  ## Installation
