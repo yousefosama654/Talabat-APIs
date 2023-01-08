@@ -28,7 +28,6 @@ namespace Talabat.Service
             var authclaims = new List<Claim>() {
             new Claim(ClaimTypes.Email,AppUser.Email),
             new Claim(ClaimTypes.Name,AppUser.DisplayName),
-            new Claim(ClaimTypes.Name,AppUser.DisplayName),
             };
 
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:key"]));

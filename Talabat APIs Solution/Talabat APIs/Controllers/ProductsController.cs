@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -28,6 +30,7 @@ namespace Talabat_APIs.Controllers
             this.TypeRepository = TypeRepository;
             Mapper = mapper;
         }
+        [Authorize]
         [HttpGet]
         // the paramter will be a model state or query string
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts([FromQuery]ProductsSpecParams productsSpecParams)

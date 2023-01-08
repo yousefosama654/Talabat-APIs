@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Talabat.core.Entities;
+using Talabat.core.Entities.Identity;
 using Talabat_APIs.Dtos;
 
 namespace Talabat_APIs.Helpers
@@ -15,7 +16,10 @@ namespace Talabat_APIs.Helpers
                 .ForMember(p => p.ProductBrand, o => o.MapFrom(c => c.ProductBrand.Name))
                 .ForMember(p => p.PictureUrl, o => o.MapFrom<ProductPictureUrlResolver>());
 
-  
+            CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<BasketItemDto, BasketItem>();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+
         }
     }
 }

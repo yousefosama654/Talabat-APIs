@@ -55,7 +55,7 @@ namespace Talabat_APIs
 
             services.AddApplicationServices();
             services.AddSwaggerServices();
-            services.AddIdentityServices();
+            services.AddIdentityServices(Configuration);
 
 
         }
@@ -73,9 +73,8 @@ namespace Talabat_APIs
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
