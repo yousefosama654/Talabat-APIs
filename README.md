@@ -108,6 +108,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
     ├──Repositories
        ├──IBasketRepository.cs
        ├──IGenericRepository.cs
+       ├──IUnitOfWork.cs
     ├──Servicecs
        ├──ITokenService.cs
        ├──IOrderService.cs
@@ -139,6 +140,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──AppIdentityContextSeed.cs
     ├──BasketRepository.cs
     ├──GenericRepository.cs
+    ├──UnitOfWork.cs
 ├── Talabat.Service
     ├──TokenService.cs
     ├──OrderService.cs
