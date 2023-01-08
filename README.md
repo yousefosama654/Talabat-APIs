@@ -47,6 +47,19 @@
     ├──appsettings.json
     ├──Program.cs
     ├──Startup.cs
+├── Talabat.Core
+    ├──Entities
+    ├──Repositories
+    ├──Servicecs
+    ├──Specification
+├── Talabat.Repository
+    ├──Data
+    ├──DataSeed
+    ├──Identity
+    ├──BasketRepository.cs
+    ├──GenericRepository.cs
+├── Talabat.Service
+    ├──TokenService.cs
     </pre>
 </div>
 ## What are the Layers of the Onion Architecture?
