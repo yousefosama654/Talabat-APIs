@@ -59,6 +59,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──BaseAPIController.cs
        ├──BasketController.cs
        ├──ProductsController.cs
+       ├──OrdersController.cs
     ├──Dtos
        ├──LoginDto.cs
        ├──ProductDto.cs
@@ -108,6 +109,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──IGenericRepository.cs
     ├──Servicecs
        ├──ITokenService.cs
+       ├──IOrderService.cs
     ├──Specification
        ├──BaseSpecification.cs
        ├──ISpecification.cs
@@ -138,6 +140,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
     ├──GenericRepository.cs
 ├── Talabat.Service
     ├──TokenService.cs
+    ├──OrderService.cs
     </pre>
 </div>
 
