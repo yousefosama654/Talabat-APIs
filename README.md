@@ -39,11 +39,29 @@
   <pre>
 ├── Talabat APIs
     ├──Controllers
+       ├──AccountController.cs
+       ├──BaseAPIController.cs
+       ├──BasketController.cs
+       ├──ProductsController.cs
     ├──Dtos
+       ├──LoginDto.cs
+       ├──ProductDto.cs
+       ├──RegisterDto.cs
+       ├──UserDto.cs
     ├──Errors
+       ├──ApiExceptionError.cs
+       ├──ApiResponse.cs
+       ├──ApiValidationErrorResponse.cs
     ├──Extensions
+       ├──AppServicesExtension.cs
+       ├──IdentityServicesExtension.cs
+       ├──SwaggerServicesExtension.cs
     ├──Helpers
+       ├──MappingProfiles.cs
+       ├──Pagination.cs
+       ├──ProductPictureUrlResolver.cs
     ├──Middlewares
+       ├──ExceptionMiddleware.cs
     ├──appsettings.json
     ├──Program.cs
     ├──Startup.cs
