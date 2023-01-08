@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StackExchange.Redis;
 using System.Collections;
 using System.Collections.Generic;
 using Talabat.core.Entities;
@@ -16,7 +17,9 @@ namespace Talabat_APIs.Helpers
                 .ForMember(p => p.ProductBrand, o => o.MapFrom(c => c.ProductBrand.Name))
                 .ForMember(p => p.PictureUrl, o => o.MapFrom<ProductPictureUrlResolver>());
 
-            CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<Talabat.core.Entities.Identity.Address, AddressDto>().ReverseMap();
+            CreateMap< Talabat.core.Entities.Order_Aggregate.Address, AddressDto >().ReverseMap();
+
             CreateMap<BasketItemDto, BasketItem>();
             CreateMap<CustomerBasketDto, CustomerBasket>();
 

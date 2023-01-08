@@ -16,6 +16,7 @@ namespace Talabat_APIs.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped(typeof(ITokenService), typeof(TokenService));
+            services.AddScoped(typeof(IOrderService), typeof(OrderService));
             services.AddScoped(typeof(IBasketRepository), typeof(BasketRepository));
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddAutoMapper(typeof(MappingProfiles));
