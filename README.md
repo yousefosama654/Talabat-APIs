@@ -18,12 +18,14 @@
 
 ## Features
 <blockquote>
+ 
 - Work on Mac,Linux and Windows.
 - Support other version Control Systems.
 - Implements open for extension closed for modification Principle (OCP).
 - Handling with all error types and validations(400-401-404-500).
 - Using Lazy and Eager Loading Techniques.
 - Adding Custom Middlewares for Authentication and Authoriziation.
+ 
 </blockquote>
  
  ## Installation
