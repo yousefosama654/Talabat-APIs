@@ -43,5 +43,20 @@ namespace Talabat.Repository
         {
             return await SpecificationEvaluator<T>.BuildQuery(this.StoreContext.Set<T>(), specs).CountAsync();
         }
+
+        public async Task CreateAsync(T entity)
+        {
+             await this.StoreContext.Set<T>().AddAsync(entity);
+        }
+
+        public void Delete(T entity)
+        {
+              this.StoreContext.Set<T>().Remove(entity);
+        }
+
+        public void Update(T entity)
+        {
+            this.StoreContext.Set<T>().Update(entity);
+        }
     }
 }
