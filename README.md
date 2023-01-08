@@ -1,39 +1,123 @@
+
 ![Logo](https://images.wuzzuf-data.net/files/company_logo/Otlob-Egypt-7940-1599059524-og.png)
 
+ 
 
 # Talabat APIs
-
- - This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
+<blockquote>
+ This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
 
 - Repository Design Pattern.
 - Specification Design Pattern.
 - UnitOfWork Design Pattern.
+</blockquote>
 
 
-
-## Authors
+<!-- ## Authors
 
 - [@Yousef Osama](https://www.linkedin.com/in/yousef-osama-120033216/)
-
+ -->
 
 ## Features
-
+<blockquote>
+ 
 - Work on Mac,Linux and Windows.
 - Support other version Control Systems.
 - Implements open for extension closed for modification Principle (OCP).
 - Handling with all error types and validations(400-401-404-500).
 - Using Lazy and Eager Loading Techniques.
 - Adding Custom Middlewares for Authentication and Authoriziation.
-## Installation
-
-- Install Talabat Project with Visual Studio
+ 
+</blockquote>
+ 
+ ## Installation
 
 ```bash
   Just clone the project
   Run on Visual Studio
   Test endpoints on Postman 
-```
-    
+```    
+ 
+<h2 href="#Structure">Project Structure</h2>
+ <div> 
+  <pre>
+├── Talabat APIs
+    ├──Controllers
+       ├──AccountController.cs
+       ├──BaseAPIController.cs
+       ├──BasketController.cs
+       ├──ProductsController.cs
+    ├──Dtos
+       ├──LoginDto.cs
+       ├──ProductDto.cs
+       ├──RegisterDto.cs
+       ├──UserDto.cs
+       ├──AddressDto.cs
+       ├──BasketItemDto.cs
+       ├──CustomerBasketDto.cs
+    ├──Errors
+       ├──ApiExceptionError.cs
+       ├──ApiResponse.cs
+       ├──ApiValidationErrorResponse.cs
+    ├──Extensions
+       ├──AppServicesExtension.cs
+       ├──IdentityServicesExtension.cs
+       ├──SwaggerServicesExtension.cs
+       ├──UserManagerExtensions
+    ├──Helpers
+       ├──MappingProfiles.cs
+       ├──Pagination.cs
+       ├──ProductPictureUrlResolver.cs
+    ├──Middlewares
+       ├──ExceptionMiddleware.cs
+    ├──appsettings.json
+    ├──Program.cs
+    ├──Startup.cs
+├── Talabat.Core
+    ├──Entities
+       ├──Identity
+          ├──Address.cs
+          ├──AppUser.cs
+       ├──BaseEntity.cs
+       ├──BasketItem.cs
+       ├──CustomerBasket.cs
+       ├──Product.cs
+       ├──ProductBrand.cs
+       ├──ProductType.cs
+    ├──Repositories
+       ├──IBasketRepository.cs
+       ├──IGenericRepository.cs
+    ├──Servicecs
+       ├──ITokenService.cs
+    ├──Specification
+       ├──BaseSpecification.cs
+       ├──ISpecification.cs
+       ├──ProductSpecificationFilterCount.cs
+       ├──ProductsSpecParams.cs
+       ├──ProductWithBrandAndTypeSpecification.cs
+├── Talabat.Repository
+    ├──Data
+       ├──Config
+          ├──ProductConfiguration.cs
+       ├──Migrations
+       ├──SpecificationEvaluator.cs
+       ├──StoreContext.cs
+       ├──StoreContextSeed.cs
+    ├──DataSeed
+       ├──brands.json
+       ├──products.json
+       ├──types.json
+    ├──Identity
+       ├──Migrations
+       ├──AppIdentityContext.cs
+       ├──AppIdentityContextSeed.cs
+    ├──BasketRepository.cs
+    ├──GenericRepository.cs
+├── Talabat.Service
+    ├──TokenService.cs
+    </pre>
+</div>
+
 
 ## What are the Layers of the Onion Architecture?
  - Onion Architecture uses the concept of layers, but they are different from 3-tier and n-tier architecture layers. Let’s see what each of these layers represents and should contain.
@@ -73,7 +157,7 @@ GET /api/Products/${id}
 
 - `Basket`
 #### Get Basket By Id
-
+ 
 ```http
 GET /api/Basket?Id=${id}
 ```
@@ -112,7 +196,6 @@ DELETE /api/Basket?Id=${id}
 | `Id`    | `string` | **Required**| Id of Basket to be deleted.|
 
 
-
 ## Responses
 
 Many API endpoints return the JSON representation of the resources created or edited. However, if an invalid request is submitted, or some other error occurs, Talabat returns a JSON response in the following format:
@@ -143,3 +226,18 @@ Talabat returns the following status codes in its API:
 | 404 | `NOT FOUND` |
 | 500 | `INTERNAL SERVER ERROR` |
 
+
+ <h2 align='center'>⭐ Authors ⭐ </h2>
+<!-- readme: collaborators -start -->
+<table  align='center'> 
+<tr>
+    <td align="center">
+        <a href="https://github.com/yousefosama654">
+            <img src="https://avatars.githubusercontent.com/u/93356614?v=4" width="100;" alt="yousefosama654"/>
+            <br />
+            <sub><b>Yousef</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: collaborators -end -->
+<h2 align='center'>Thank You. 💖 </h2>
