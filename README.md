@@ -32,12 +32,14 @@
  
  ## Installation
 
+<blockquote>
 ```bash
   Just clone the project
   Run on Visual Studio
   Test endpoints on Postman 
 ```
-    
+</blockquote>    
+ 
 <h2 href="#Structure">Project Structure</h2>
  <div> 
   <pre>
