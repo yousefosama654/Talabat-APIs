@@ -32,8 +32,6 @@
  
  ## Installation
 
-- Install Talabat Project with Visual Studio
-
 ```bash
   Just clone the project
   Run on Visual Studio
