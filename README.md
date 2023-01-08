@@ -118,6 +118,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──ProductSpecificationFilterCount.cs
        ├──ProductsSpecParams.cs
        ├──ProductWithBrandAndTypeSpecification.cs
+       ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
 ├── Talabat.Repository
     ├──Data
        ├──Config
