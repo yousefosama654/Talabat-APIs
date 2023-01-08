@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Talabat.core.Entities.Order_Aggregate;
@@ -16,7 +17,6 @@ namespace Talabat_APIs.Controllers
     {
         public IOrderService IOrderService { get; }
         public IMapper Mapper { get; }
-
         public OrdersController(IOrderService IOrderService, IMapper mapper)
         {
             this.IOrderService = IOrderService;
@@ -37,6 +37,28 @@ namespace Talabat_APIs.Controllers
             {
                 return BadRequest(new ApiResponse(400, "An Error Occured in Creating New Order"));
             }
+        }
+        [HttpGet]
+        public async Task<ActionResult<IReadOnlyList<Talabat.core.Entities.Order_Aggregate.Order>>> GetOrdersForUserAsync()
+        {
+            var useremail = this.User.FindFirstValue(ClaimTypes.Email);
+            return Ok(await this.IOrderService.GetOrdersForUserAsync(useremail));
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Talabat.core.Entities.Order_Aggregate.Order>> GetOrderByIdForUser(int id)
+        {
+            var useremail = this.User.FindFirstValue(ClaimTypes.Email);
+            var order = await this.IOrderService.GetOrderByIdForUserAsync(useremail, id);
+            if (order == null)
+                return BadRequest(new ApiResponse(400, "No Order With This Id For The Current User"));
+            return Ok(order);
+        }
+        [HttpGet("DeliveryMethods")]
+        public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()
+        {
+            var useremail = this.User.FindFirstValue(ClaimTypes.Email);
+            return Ok(await this.IOrderService.GetDeliveryMethodsAsync(useremail));
         }
     }
 }
