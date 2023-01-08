@@ -68,6 +68,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──AddressDto.cs
        ├──BasketItemDto.cs
        ├──CustomerBasketDto.cs
+       ├──OrderDto.cs
     ├──Errors
        ├──ApiExceptionError.cs
        ├──ApiResponse.cs
