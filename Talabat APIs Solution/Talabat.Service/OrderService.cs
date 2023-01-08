@@ -12,16 +12,15 @@ namespace Talabat.Service
 {
     public class OrderService : IOrderService
     {
-        public OrderService(IGenericRepository<DeliveryMethod> DeliveryMethodRepo, IGenericRepository<Order> OrderRepo, IBasketRepository BasketRepo)
+        public OrderService(IBasketRepository BasketRepo,IUnitOfWork unitOfWork)
         {
-            this.DeliveryMethodRepo = DeliveryMethodRepo;
-            this.OrderRepo = OrderRepo;
             this.BasketRepo = BasketRepo;
+            UnitOfWork = unitOfWork;
         }
 
-        public IGenericRepository<DeliveryMethod> DeliveryMethodRepo { get; }
-        public IGenericRepository<Order> OrderRepo { get; }
+
         public IBasketRepository BasketRepo { get; }
+        public IUnitOfWork UnitOfWork { get; }
 
         public async Task<Order> CreateOrder(string BuyerEmail, string basketId, Address shippingaddress, int deliveryMethodId)
         {
@@ -34,9 +33,12 @@ namespace Talabat.Service
                 items.Add(orderitem);
             }
             var subtotal = items.Sum(o => o.Quantity * o.Price);
-            var deliverymethod = await this.DeliveryMethodRepo.GetByIdAsync(deliveryMethodId);
+            var deliverymethod = await this.UnitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
             var order = new Order(BuyerEmail, shippingaddress, subtotal, deliverymethod, items);
-            await this.OrderRepo.CreateAsync(order);
+            await this.UnitOfWork.Repository<Order>().CreateAsync(order);
+            var result= await this.UnitOfWork.Complete();
+            if (result == 0)
+                return null;
             return order;
         }
 
