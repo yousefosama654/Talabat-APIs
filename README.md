@@ -52,6 +52,9 @@
        ├──ProductDto.cs
        ├──RegisterDto.cs
        ├──UserDto.cs
+       ├──AddressDto.cs
+       ├──BasketItemDto.cs
+       ├──CustomerBasketDto.cs
     ├──Errors
        ├──ApiExceptionError.cs
        ├──ApiResponse.cs
@@ -60,6 +63,7 @@
        ├──AppServicesExtension.cs
        ├──IdentityServicesExtension.cs
        ├──SwaggerServicesExtension.cs
+       ├──UserManagerExtensions
     ├──Helpers
        ├──MappingProfiles.cs
        ├──Pagination.cs
@@ -190,7 +194,6 @@ DELETE /api/Basket?Id=${id}
 | Parameter | Type     | Status   |     Description                       |
 | :-------- | :------- | :------- | :--------------------------------     |
 | `Id`    | `string` | **Required**| Id of Basket to be deleted.|
-
 
 
 ## Responses
