@@ -49,13 +49,42 @@
     ├──Startup.cs
 ├── Talabat.Core
     ├──Entities
+       ├──Identity
+          ├──Address.cs
+          ├──AppUser.cs
+       ├──BaseEntity.cs
+       ├──BasketItem.cs
+       ├──CustomerBasket.cs
+       ├──Product.cs
+       ├──ProductBrand.cs
+       ├──ProductType.cs
     ├──Repositories
+       ├──IBasketRepository.cs
+       ├──IGenericRepository.cs
     ├──Servicecs
+       ├──ITokenService.cs
     ├──Specification
+       ├──BaseSpecification.cs
+       ├──ISpecification.cs
+       ├──ProductSpecificationFilterCount.cs
+       ├──ProductsSpecParams.cs
+       ├──ProductWithBrandAndTypeSpecification.cs
 ├── Talabat.Repository
     ├──Data
+       ├──Config
+          ├──ProductConfiguration.cs
+       ├──Migrations
+       ├──SpecificationEvaluator.cs
+       ├──StoreContext.cs
+       ├──StoreContextSeed.cs
     ├──DataSeed
+       ├──brands.json
+       ├──products.json
+       ├──types.json
     ├──Identity
+       ├──Migrations
+       ├──AppIdentityContext.cs
+       ├──AppIdentityContextSeed.cs
     ├──BasketRepository.cs
     ├──GenericRepository.cs
 ├── Talabat.Service
