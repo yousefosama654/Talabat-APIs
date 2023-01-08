@@ -11,10 +11,10 @@
 </blockquote>
 
 
-## Authors
+<!-- ## Authors
 
 - [@Yousef Osama](https://www.linkedin.com/in/yousef-osama-120033216/)
-
+ -->
 
 ## Features
 <blockquote>
