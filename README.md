@@ -154,11 +154,7 @@ GET /api/Products/${id}
 | `id`      | `int   ` | **Required**| Id of Product to fetch. |
 
 - `Basket`
-
-<blockquote>
 #### Get Basket By Id
-</blockquote>
- 
  
 ```http
 GET /api/Basket?Id=${id}
