@@ -23,15 +23,17 @@ namespace Talabat_APIs.Controllers
             Mapper = mapper;
         }
         [HttpPost]
-        public async Task<ActionResult<Talabat.core.Entities.Order_Aggregate.Order>> CreateOrder(OrderDto OrderDto)
+        public async Task<ActionResult<OrderToReturnDto>> CreateOrder(OrderDto OrderDto)
         {
             var userEmail = this.User.FindFirstValue(ClaimTypes.Email);
             var address = this.Mapper.Map<AddressDto, Address>(OrderDto.shippingaddress);
 
             var order = await this.IOrderService.CreateOrder(userEmail, OrderDto.basketId, address, OrderDto.deliveryMethodId);
+            var mappedOrder = this.Mapper.Map<Talabat.core.Entities.Order_Aggregate.Order, OrderToReturnDto>(order);
+
             if (order != null)
             {
-                return Ok(order);
+                return Ok(mappedOrder);
             }
             else
             {
@@ -39,20 +41,23 @@ namespace Talabat_APIs.Controllers
             }
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Talabat.core.Entities.Order_Aggregate.Order>>> GetOrdersForUserAsync()
+        public async Task<ActionResult<IReadOnlyList<OrderToReturnDto>>> GetOrdersForUserAsync()
         {
             var useremail = this.User.FindFirstValue(ClaimTypes.Email);
-            return Ok(await this.IOrderService.GetOrdersForUserAsync(useremail));
+            var order = await this.IOrderService.GetOrdersForUserAsync(useremail);
+            var mappedOrder = this.Mapper.Map<IReadOnlyList<Talabat.core.Entities.Order_Aggregate.Order>, IReadOnlyList<OrderToReturnDto>>(order);
+            return Ok(mappedOrder);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Talabat.core.Entities.Order_Aggregate.Order>> GetOrderByIdForUser(int id)
+        public async Task<ActionResult<OrderToReturnDto>> GetOrderByIdForUser(int id)
         {
             var useremail = this.User.FindFirstValue(ClaimTypes.Email);
             var order = await this.IOrderService.GetOrderByIdForUserAsync(useremail, id);
+            var mappedOrder = this.Mapper.Map<Talabat.core.Entities.Order_Aggregate.Order,OrderToReturnDto>(order);
             if (order == null)
                 return BadRequest(new ApiResponse(400, "No Order With This Id For The Current User"));
-            return Ok(order);
+            return Ok(mappedOrder);
         }
         [HttpGet("DeliveryMethods")]
         public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()
