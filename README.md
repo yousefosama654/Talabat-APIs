@@ -36,7 +36,7 @@
  
 - StackExchange.Redis.
 - Microsoft.EntityFrameworkCore.Tools.
-- Microsoft.EntityFrameworkCore.SqlSer.
+- Microsoft.EntityFrameworkCore.SqlServer.
 - Microsoft.AspNetCore.Identity.EntityFrameworkCore.
 - AutoMapper.Extensions.Microsoft.DependencyInjection. 
 - Microsoft.AspNetCore.Authentication.JwtBearer.
