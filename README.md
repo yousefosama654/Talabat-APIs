@@ -4,12 +4,13 @@
  
 
 # Talabat APIs
+This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
 <blockquote>
- This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
-
+ 
 - Repository Design Pattern.
 - Specification Design Pattern.
 - UnitOfWork Design Pattern.
+- Builder Design Pattern.
 </blockquote>
 
 
@@ -28,6 +29,17 @@
 - Using Lazy and Eager Loading Techniques.
 - Adding Custom Middlewares for Authentication and Authoriziation.
  
+</blockquote>
+ 
+  ## Libraries Used And Packages
+<blockquote>
+ 
+- StackExchange.Redis.
+- Microsoft.EntityFrameworkCore.Tools.
+- Microsoft.EntityFrameworkCore.SqlServer.
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore.
+- AutoMapper.Extensions.Microsoft.DependencyInjection. 
+- Microsoft.AspNetCore.Authentication.JwtBearer.
 </blockquote>
  
  ## Installation
@@ -84,6 +96,13 @@
        ├──Product.cs
        ├──ProductBrand.cs
        ├──ProductType.cs
+       ├──Order Aggregate
+          ├──Address.cs
+          ├──DeliveryMethod.cs
+          ├──Order.cs
+          ├──OrderItem.cs
+          ├──OrderStatus.cs
+          ├──ProductItemOrdered.cs
     ├──Repositories
        ├──IBasketRepository.cs
        ├──IGenericRepository.cs
@@ -99,6 +118,9 @@
     ├──Data
        ├──Config
           ├──ProductConfiguration.cs
+          ├──OrderConfiguration.cs
+          ├──OrderItemConfiguration.cs
+          ├──DeliveryMethodConfiguration.cs
        ├──Migrations
        ├──SpecificationEvaluator.cs
        ├──StoreContext.cs
@@ -107,6 +129,7 @@
        ├──brands.json
        ├──products.json
        ├──types.json
+       ├──delivery.json
     ├──Identity
        ├──Migrations
        ├──AppIdentityContext.cs
@@ -181,7 +204,7 @@ POST /api/Basket?Id=${id}
 | `Quantity`    | `int` | **Required**.of Basket to fetch.|
 | `Price`    | `decimal` | .of Basket to fetch.|
 | `Brand`    | `string` | **Required**.of Basket to fetch.|
-| `Type`    | `string` | **Required**.of Basket to fetch.|
+| `Type`    | `string` | **Required**.of Basket to fetch.| 
 
 
 
