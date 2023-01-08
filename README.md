@@ -10,6 +10,7 @@
 - Repository Design Pattern.
 - Specification Design Pattern.
 - UnitOfWork Design Pattern.
+- Builder Design Pattern.
 </blockquote>
 
 
@@ -181,7 +182,7 @@ POST /api/Basket?Id=${id}
 | `Quantity`    | `int` | **Required**.of Basket to fetch.|
 | `Price`    | `decimal` | .of Basket to fetch.|
 | `Brand`    | `string` | **Required**.of Basket to fetch.|
-| `Type`    | `string` | **Required**.of Basket to fetch.|
+| `Type`    | `string` | **Required**.of Basket to fetch.| 
 
 
 
