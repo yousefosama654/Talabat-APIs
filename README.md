@@ -5,7 +5,8 @@
 
 # Talabat APIs
 This is a Talabat Clone Project built in in Onion Architecture Based on the following Design Patterns:
-<blockquote> 
+<blockquote>
+ 
 - Repository Design Pattern.
 - Specification Design Pattern.
 - UnitOfWork Design Pattern.
