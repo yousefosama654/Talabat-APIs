@@ -96,6 +96,13 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──Product.cs
        ├──ProductBrand.cs
        ├──ProductType.cs
+       ├──Order Aggregate
+          ├──Address.cs
+          ├──DeliveryMethod.cs
+          ├──Order.cs
+          ├──OrderItem.cs
+          ├──OrderStatus.cs
+          ├──ProductItemOrdered.cs
     ├──Repositories
        ├──IBasketRepository.cs
        ├──IGenericRepository.cs
@@ -111,6 +118,9 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
     ├──Data
        ├──Config
           ├──ProductConfiguration.cs
+          ├──OrderConfiguration.cs
+          ├──OrderItemConfiguration.cs
+          ├──DeliveryMethodConfiguration.cs
        ├──Migrations
        ├──SpecificationEvaluator.cs
        ├──StoreContext.cs
@@ -119,6 +129,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──brands.json
        ├──products.json
        ├──types.json
+       ├──delivery.json
     ├──Identity
        ├──Migrations
        ├──AppIdentityContext.cs
