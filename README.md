@@ -40,7 +40,18 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 - Microsoft.AspNetCore.Identity.EntityFrameworkCore.
 - AutoMapper.Extensions.Microsoft.DependencyInjection. 
 - Microsoft.AspNetCore.Authentication.JwtBearer.
+- Stripe.net.
 </blockquote>
+ 
+ ## Databases
+ 
+ <blockquote>
+ 
+ - TalabatAPIs.
+ - TalabatIdentityAPIs.
+ - Redis (open source, in-memory database).
+ 
+ </blockquote>
  
  ## Installation
 
@@ -114,6 +125,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
     ├──Servicecs
        ├──ITokenService.cs
        ├──IOrderService.cs
+       ├──IPaymentService.cs
     ├──Specification
        ├──BaseSpecification.cs
        ├──ISpecification.cs
@@ -147,6 +159,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 ├── Talabat.Service
     ├──TokenService.cs
     ├──OrderService.cs
+    ├──PaymentService.cs
     </pre>
 </div>
 
