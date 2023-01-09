@@ -58,7 +58,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 ```bash
   Just clone the project
   Run on Visual Studio
-  Test endpoints on Postman  	:smile:
+  Test endpoints on Postman 
 ```    
  
 <h2 href="#Structure">Project Structure</h2>
