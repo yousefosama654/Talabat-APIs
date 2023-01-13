@@ -134,6 +134,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──ProductsSpecParams.cs
        ├──ProductWithBrandAndTypeSpecification.cs
        ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
+       ├──OrderByPaymentIntentIdSpecification
 ├── Talabat.Repository
     ├──Data
        ├──Config
