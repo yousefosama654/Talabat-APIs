@@ -71,6 +71,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──BasketController.cs
        ├──ProductsController.cs
        ├──OrdersController.cs
+       ├──PaymentsController.cs
     ├──Dtos
        ├──LoginDto.cs
        ├──ProductDto.cs
