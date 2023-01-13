@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Talabat.core.Entities
 {
-    public class BasketItem : BaseEntity
+    public class BasketItem 
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string PictureUrl { get; set; }

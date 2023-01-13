@@ -62,8 +62,7 @@ namespace Talabat_APIs.Controllers
         [HttpGet("DeliveryMethods")]
         public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()
         {
-            var useremail = this.User.FindFirstValue(ClaimTypes.Email);
-            return Ok(await this.IOrderService.GetDeliveryMethodsAsync(useremail));
+            return Ok(await this.IOrderService.GetDeliveryMethodsAsync());
         }
     }
 }

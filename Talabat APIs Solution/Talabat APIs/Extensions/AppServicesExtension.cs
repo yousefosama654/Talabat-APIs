@@ -15,6 +15,7 @@ namespace Talabat_APIs.Extensions
         // the return type due to  case of chaining 
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.AddScoped(typeof(IPaymentService), typeof(PaymentService));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddScoped(typeof(ITokenService), typeof(TokenService));
             services.AddScoped(typeof(IOrderService), typeof(OrderService));
