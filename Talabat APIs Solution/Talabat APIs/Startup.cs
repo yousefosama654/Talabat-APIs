@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -56,8 +57,13 @@ namespace Talabat_APIs
             services.AddApplicationServices();
             services.AddSwaggerServices();
             services.AddIdentityServices(Configuration);
-
-
+            services.AddCors(Options =>
+            {
+                Options.AddPolicy("CorsPolicy", Options =>
+                {
+                    Options.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,6 +79,7 @@ namespace Talabat_APIs
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseCors("CorsPolicy");
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

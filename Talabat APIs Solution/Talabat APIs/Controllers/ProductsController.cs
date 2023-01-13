@@ -24,7 +24,7 @@ namespace Talabat_APIs.Controllers
             Mapper = mapper;
             UnitOfWork = unitOfWork;
         }
-        [Authorize]
+    
         [HttpGet]
         // the paramter will be a model state or query string
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts([FromQuery]ProductsSpecParams productsSpecParams)
@@ -45,7 +45,7 @@ namespace Talabat_APIs.Controllers
 
             return new OkObjectResult(Mapper.Map<Product, ProductDto>(product));
         }
-        [HttpGet("Brands")]
+        [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductsBrands()
         {
             var ProductBrands = await this.UnitOfWork.Repository<ProductBrand>().GetAllAsync();
