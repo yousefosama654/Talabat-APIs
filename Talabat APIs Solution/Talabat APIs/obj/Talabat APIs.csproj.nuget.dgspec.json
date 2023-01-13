@@ -136,6 +136,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.4.0, )"
             }
           },
           "imports": [

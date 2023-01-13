@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XTGykkjCgyColLE2dgAJtTekmAa4u9jbChETYODIqdA1n28oqC610o7Dk1eTaJCVUU5ThA4NLaZ2kPRMTzT2eQ==",
+  "dgSpecHash": "RmoI7Sgg4j4LULOALPxukd68Zm8Iie9QsV1VZTuS8BgVi8b2Q2TQAOyvi3SgsSpmcvkDBgm4FbUM38Qbbrcwdg==",
   "success": true,
   "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat.Service\\Talabat.Service.csproj",
   "expectedPackageFiles": [
@@ -29,11 +29,22 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\stripe.net\\41.4.0\\stripe.net.41.4.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
-    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

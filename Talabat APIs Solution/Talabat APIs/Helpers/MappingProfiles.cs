@@ -28,7 +28,6 @@ namespace Talabat_APIs.Helpers
                 .ForMember(d => d.ProductId, s => s.MapFrom(s => s.Product.ProductId))
                 .ForMember(d => d.ProductName, s => s.MapFrom(s => s.Product.ProductName))
                 .ForMember(d => d.ProductPictureUrl, s => s.MapFrom(s => s.Product.PictureUrl));
-
         }
     }
 }

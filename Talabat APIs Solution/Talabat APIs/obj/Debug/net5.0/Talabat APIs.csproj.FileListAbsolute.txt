@@ -78,3 +78,5 @@ D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debu
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Service.dll
 D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Talabat.Service.pdb
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Download\githubtrial\Talabat-APIs\Talabat APIs Solution\Talabat APIs\bin\Debug\net5.0\Stripe.net.dll

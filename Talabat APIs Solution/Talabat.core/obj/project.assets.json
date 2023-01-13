@@ -289,6 +289,67 @@
           }
         }
       },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Stripe.net/41.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
@@ -315,6 +376,23 @@
           }
         }
       },
+      "System.Configuration.ConfigurationManager/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "5.0.0",
+          "System.Security.Permissions": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/5.0.1": {
         "type": "package",
         "compile": {
@@ -325,6 +403,136 @@
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "System.Drawing.Common/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Permissions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Windows.Extensions": "5.0.0"
+        },
+        "compile": {
+          "ref/net5.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Windows.Extensions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       }
@@ -670,6 +878,106 @@
         "version.txt"
       ]
     },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "sha512": "Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/net461/Microsoft.Win32.SystemEvents.xml",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Stripe.net/41.4.0": {
+      "sha512": "ZTAorvWKMYLHU7zvxokD8ddwTAHbdeQCyaBQc7uKCtzSHsW+OGzdMehUX+5mU5JgE9AEcheRck4S6j+H4j2HFw==",
+      "type": "package",
+      "path": "stripe.net/41.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.41.4.0.nupkg.sha512",
+        "stripe.net.nuspec"
+      ]
+    },
     "System.Collections.Immutable/5.0.0": {
       "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
       "type": "package",
@@ -786,6 +1094,30 @@
         "version.txt"
       ]
     },
+    "System.Configuration.ConfigurationManager/5.0.0": {
+      "sha512": "aM7cbfEfVNlEEOj3DsZP+2g9NRwbkyiAv2isQEzw7pnkDg9ekCU2m1cdJLM02Uq691OaCS91tooaxcEn8d0q5w==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/5.0.1": {
       "sha512": "uXQEYqav2V3zP6OwkOKtLv+qIi6z3m1hsGyKwXX7ZA7htT4shoVccGxnJ9kVRFPNAsi1ArZTq2oh7WOto6GbkQ==",
       "type": "package",
@@ -813,11 +1145,256 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Drawing.Common/5.0.0": {
+      "sha512": "SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
+      "type": "package",
+      "path": "system.drawing.common/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.5.0.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "type": "package",
+      "path": "system.security.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.5.0.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/5.0.0": {
+      "sha512": "HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
+        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/5.0.0": {
+      "sha512": "uE8juAhEkp7KDBCdjDIE3H9R1HJuEHqeqX8nLX9gmYKWwsqk3T5qZlPx8qle5DPKimC/Fy3AFTdV7HamgCh9qQ==",
+      "type": "package",
+      "path": "system.security.permissions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/net5.0/System.Security.Permissions.dll",
+        "lib/net5.0/System.Security.Permissions.xml",
+        "lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "lib/netcoreapp3.0/System.Security.Permissions.xml",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.xml",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.xml",
+        "ref/net5.0/System.Security.Permissions.dll",
+        "ref/net5.0/System.Security.Permissions.xml",
+        "ref/netcoreapp3.0/System.Security.Permissions.dll",
+        "ref/netcoreapp3.0/System.Security.Permissions.xml",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.5.0.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "type": "package",
+      "path": "system.security.principal.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.5.0.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Windows.Extensions/5.0.0": {
+      "sha512": "c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
+      "type": "package",
+      "path": "system.windows.extensions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "lib/netcoreapp3.0/System.Windows.Extensions.xml",
+        "ref/netcoreapp3.0/System.Windows.Extensions.dll",
+        "ref/netcoreapp3.0/System.Windows.Extensions.xml",
+        "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.xml",
+        "system.windows.extensions.5.0.0.nupkg.sha512",
+        "system.windows.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.17"
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.17",
+      "Stripe.net >= 41.4.0"
     ]
   },
   "packageFolders": {
@@ -867,6 +1444,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.17, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[41.4.0, )"
           }
         },
         "imports": [

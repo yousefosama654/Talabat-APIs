@@ -27,6 +27,10 @@ namespace Talabat.Service
         {
             var basket = await this.BasketRepo.GetBasketByIdAsync(basketId);
             var items = new List<OrderItem>();
+            if (basket==null)
+            {
+                return null;
+            }
             foreach (var item in basket.Items)
             {
                 var product = new ProductItemOrdered(item.Id, item.Name, item.PictureUrl);
