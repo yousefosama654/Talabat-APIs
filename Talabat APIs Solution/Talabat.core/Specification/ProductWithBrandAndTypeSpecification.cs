@@ -25,16 +25,16 @@ namespace Talabat.core.Specification
             {
                 switch (productsSpecParams.sort)
                 {
-                    case "price":
+                    case "priceAsc":
                         this.AddOrderByAscending(p => p.Price);
                         break;
-                    case "pricedesc":
+                    case "priceDesc":
                         this.AddOrderByDescending(p => p.Price);
                         break;
                     case "name":
                         this.AddOrderByAscending(p => p.Name);
                         break;
-                    case "namedesc":
+                    case "nameDesc":
                         this.AddOrderByDescending(p => p.Name);
                         break;
                     default:
