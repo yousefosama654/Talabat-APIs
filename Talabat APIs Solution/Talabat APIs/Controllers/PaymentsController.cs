@@ -13,7 +13,7 @@ using Talabat_APIs.Errors;
 
 namespace Talabat_APIs.Controllers
 {
-    [Authorize]
+    
     public class PaymentsController : BaseAPIController
     {
         public IPaymentService PaymentService { get; }
@@ -24,6 +24,7 @@ namespace Talabat_APIs.Controllers
             PaymentService = paymentService;
             Logger = logger;
         }
+        [Authorize]
         [HttpPost("{basketId}")]
         public async Task<ActionResult<CustomerBasket>> CreateOrUpdatePaymentIntent(string basketId)
         {
