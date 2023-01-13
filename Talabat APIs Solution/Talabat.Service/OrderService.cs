@@ -13,21 +13,23 @@ namespace Talabat.Service
 {
     public class OrderService : IOrderService
     {
-        public OrderService(IBasketRepository BasketRepo,IUnitOfWork unitOfWork)
+        public OrderService(IBasketRepository BasketRepo, IUnitOfWork unitOfWork, IPaymentService paymentService)
         {
             this.BasketRepo = BasketRepo;
             UnitOfWork = unitOfWork;
+            PaymentService = paymentService;
         }
 
 
         public IBasketRepository BasketRepo { get; }
         public IUnitOfWork UnitOfWork { get; }
+        public IPaymentService PaymentService { get; }
 
         public async Task<Order> CreateOrder(string BuyerEmail, string basketId, Address shippingaddress, int deliveryMethodId)
         {
             var basket = await this.BasketRepo.GetBasketByIdAsync(basketId);
             var items = new List<OrderItem>();
-            if (basket==null)
+            if (basket == null)
             {
                 return null;
             }
@@ -39,9 +41,16 @@ namespace Talabat.Service
             }
             var subtotal = items.Sum(o => o.Quantity * o.Price);
             var deliverymethod = await this.UnitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
-            var order = new Order(BuyerEmail, shippingaddress, subtotal, deliverymethod, items);
+            var specs = new OrderByPaymentIntentIdSpecification(basket.PaymentIntentId);
+            var existingOrder = await this.UnitOfWork.Repository<Order>().GetByIdWithSpecsAsync(specs);
+            if (existingOrder != null)
+            {
+                this.UnitOfWork.Repository<Order>().Delete(existingOrder);
+                await this.PaymentService.CreateOrUpdatePaymentIntent(basketId);
+            }
+            var order = new Order(BuyerEmail, shippingaddress, subtotal, deliverymethod, items, basket.PaymentIntentId);
             await this.UnitOfWork.Repository<Order>().CreateAsync(order);
-            var result= await this.UnitOfWork.Complete();
+            var result = await this.UnitOfWork.Complete();
             if (result == 0)
                 return null;
             return order;
@@ -54,7 +63,7 @@ namespace Talabat.Service
 
         public async Task<Order> GetOrderByIdForUserAsync(string BuyerEmail, int OrderId)
         {
-            var specs = new OrderWithItemsAndDeliveryMethodsSpecification(BuyerEmail,OrderId);
+            var specs = new OrderWithItemsAndDeliveryMethodsSpecification(BuyerEmail, OrderId);
             return (Order)await this.UnitOfWork.Repository<Order>().GetByIdWithSpecsAsync(specs);
 
         }
@@ -62,7 +71,7 @@ namespace Talabat.Service
         public async Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string BuyerEmail)
         {
             var specs = new OrderWithItemsAndDeliveryMethodsSpecification(BuyerEmail);
-            return (IReadOnlyList<Order>) await this.UnitOfWork.Repository<Order>().GetAllWithSpecsAsync(specs);
+            return (IReadOnlyList<Order>)await this.UnitOfWork.Repository<Order>().GetAllWithSpecsAsync(specs);
         }
     }
 }
