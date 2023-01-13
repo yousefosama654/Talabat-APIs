@@ -9,7 +9,7 @@ using Talabat.core.Servicecs;
 using Talabat.Repository.Data.Migrations;
 using Talabat_APIs.Dtos;
 using Talabat_APIs.Errors;
-
+using Order = Talabat.core.Entities.Order_Aggregate.Order;
 namespace Talabat_APIs.Controllers
 {
     [Authorize]
@@ -29,9 +29,9 @@ namespace Talabat_APIs.Controllers
             var address = this.Mapper.Map<AddressDto, Address>(OrderDto.shippingaddress);
 
             var order = await this.IOrderService.CreateOrder(userEmail, OrderDto.basketId, address, OrderDto.deliveryMethodId);
-            var mappedOrder = this.Mapper.Map<Talabat.core.Entities.Order_Aggregate.Order, OrderToReturnDto>(order);
+            var mappedOrder = this.Mapper.Map<Order, OrderToReturnDto>(order);
 
-            if (order != null)
+            if (mappedOrder != null)
             {
                 return Ok(mappedOrder);
             }
@@ -54,7 +54,7 @@ namespace Talabat_APIs.Controllers
         {
             var useremail = this.User.FindFirstValue(ClaimTypes.Email);
             var order = await this.IOrderService.GetOrderByIdForUserAsync(useremail, id);
-            var mappedOrder = this.Mapper.Map<Talabat.core.Entities.Order_Aggregate.Order,OrderToReturnDto>(order);
+            var mappedOrder = this.Mapper.Map<Talabat.core.Entities.Order_Aggregate.Order, OrderToReturnDto>(order);
             if (order == null)
                 return BadRequest(new ApiResponse(400, "No Order With This Id For The Current User"));
             return Ok(mappedOrder);

@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Stripe;
+using System.IO;
 using System.Threading.Tasks;
 using Talabat.core.Entities;
+using Talabat.core.Entities.Order_Aggregate;
 using Talabat.core.Servicecs;
 using Talabat_APIs.Errors;
 
@@ -12,9 +16,12 @@ namespace Talabat_APIs.Controllers
     public class PaymentsController : BaseAPIController
     {
         public IPaymentService PaymentService { get; }
-        public PaymentsController(IPaymentService paymentService)
+        public ILogger<PaymentsController> Logger { get; }
+
+        public PaymentsController(IPaymentService paymentService,ILogger<PaymentsController> logger)
         {
             PaymentService = paymentService;
+            Logger = logger;
         }
         [HttpPost("{basketId}")]
         public async Task<ActionResult<CustomerBasket>> CreateOrUpdatePaymentIntent(string basketId)
@@ -28,6 +35,31 @@ namespace Talabat_APIs.Controllers
             {
                 return Ok(basket);
             }
+        }
+
+        [HttpPost("webhook")]
+        public async Task<ActionResult> StripeWebhook()
+        {
+            var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
+
+            var stripeEvent = EventUtility.ConstructEvent(json,
+                Request.Headers["Stripe-Signature"], "");
+            PaymentIntent paymentIntent;
+            Order order;
+            switch (stripeEvent.Type)
+            {
+                case Events.PaymentIntentSucceeded:
+                    paymentIntent = (PaymentIntent)stripeEvent.Data.Object;
+                    order = await this.PaymentService.UpdatePayementIntentSucceededOrFailed(paymentIntent.Id, true);
+                    this.Logger.LogInformation($"Order with id {order.Id} is succeded with intent {paymentIntent.Id}");
+                    break;
+                case Events.PaymentIntentPaymentFailed:
+                    paymentIntent = (PaymentIntent)stripeEvent.Data.Object;
+                    order = await this.PaymentService.UpdatePayementIntentSucceededOrFailed(paymentIntent.Id, false);
+                    this.Logger.LogInformation($"Order with id {order.Id} is failed with intent {paymentIntent.Id}");
+                    break;
+            }
+            return new EmptyResult();
         }
     }
 }
