@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing.Matching;
 using Microsoft.Extensions.Logging;
 using Stripe;
 using System.IO;
@@ -17,7 +18,7 @@ namespace Talabat_APIs.Controllers
     {
         public IPaymentService PaymentService { get; }
         public ILogger<PaymentsController> Logger { get; }
-
+        const string WebhookSecret = "whsec_9500fe18789581368460b5a89275e6840763e5c359cbc0dc0efdd8a681374410";
         public PaymentsController(IPaymentService paymentService,ILogger<PaymentsController> logger)
         {
             PaymentService = paymentService;
@@ -43,7 +44,7 @@ namespace Talabat_APIs.Controllers
             var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
 
             var stripeEvent = EventUtility.ConstructEvent(json,
-                Request.Headers["Stripe-Signature"], "");
+                Request.Headers["Stripe-Signature"], WebhookSecret);
             PaymentIntent paymentIntent;
             Order order;
             switch (stripeEvent.Type)
