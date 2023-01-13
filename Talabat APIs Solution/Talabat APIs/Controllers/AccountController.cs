@@ -94,7 +94,7 @@ namespace Talabat_APIs.Controllers
             });
         }
         [Authorize]
-        [HttpGet("GetCurrentUserAddress")]
+        [HttpGet("address")]
         public async Task<ActionResult<AddressDto>> GetCurrentUserAddress()
         {
             //first get the cuurent user   
