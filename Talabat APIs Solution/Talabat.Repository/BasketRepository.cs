@@ -22,6 +22,7 @@ namespace Talabat.Repository
         public async Task<bool> DeleteBasketsync(string Id)
         {
             return await db.KeyDeleteAsync(Id);
+            
         }
         public async Task<CustomerBasket> GetBasketByIdAsync(string Id)
         {

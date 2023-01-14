@@ -12,5 +12,6 @@ namespace Talabat.core.Repositories
         Task<CustomerBasket> GetBasketByIdAsync(string Id);
         Task<CustomerBasket> UpdateBasketAsync(CustomerBasket CustomerBasket);
         Task<bool> DeleteBasketsync(string Id);
+
     }
 }
