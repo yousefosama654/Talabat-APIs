@@ -127,6 +127,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──ITokenService.cs
        ├──IOrderService.cs
        ├──IPaymentService.cs
+       ├──IResponseCacheService.cs
     ├──Specification
        ├──BaseSpecification.cs
        ├──ISpecification.cs
@@ -162,6 +163,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
     ├──TokenService.cs
     ├──OrderService.cs
     ├──PaymentService.cs
+    ├──ResponseCacheService.cs
     </pre>
 </div>
 
