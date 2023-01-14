@@ -728,7 +728,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "StackExchange.Redis/2.6.86": {
+      "StackExchange.Redis/2.6.90": {
         "type": "package",
         "dependencies": {
           "Pipelines.Sockets.Unofficial": "2.2.2"
@@ -2949,10 +2949,10 @@
         "runtime.native.system.nuspec"
       ]
     },
-    "StackExchange.Redis/2.6.86": {
-      "sha512": "++rdOGeAJ3GUZADwygIgap4fyU/pvvtRLN2FClawW/OxG5XhfS/mH66ADk19k+oj6SawuBqgH39mhKhVngai/g==",
+    "StackExchange.Redis/2.6.90": {
+      "sha512": "OVmlUSvuCI4rMcSU1dI1h+U/6t2k8AL7TVD1kIrZ0eSDDrgNlKcsTlQhZU8u9ViU6F8AVOvFZnxDP69NyU/oUQ==",
       "type": "package",
-      "path": "stackexchange.redis/2.6.86",
+      "path": "stackexchange.redis/2.6.90",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2966,7 +2966,7 @@
         "lib/netcoreapp3.1/StackExchange.Redis.xml",
         "lib/netstandard2.0/StackExchange.Redis.dll",
         "lib/netstandard2.0/StackExchange.Redis.xml",
-        "stackexchange.redis.2.6.86.nupkg.sha512",
+        "stackexchange.redis.2.6.90.nupkg.sha512",
         "stackexchange.redis.nuspec"
       ]
     },
@@ -6360,7 +6360,6 @@
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
-      "StackExchange.Redis >= 2.6.86",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Talabat.Repository >= 1.0.0",
       "Talabat.Service >= 1.0.0"
@@ -6427,10 +6426,6 @@
             "target": "Package",
             "version": "[5.0.17, )"
           },
-          "StackExchange.Redis": {
-            "target": "Package",
-            "version": "[2.6.86, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"
@@ -6458,25 +6453,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: StackExchange.Redis from 2.6.90 to 2.6.86. Reference the package directly from the project to select a different version. \r\n Talabat APIs -> Talabat.Repository -> Talabat.core -> StackExchange.Redis (>= 2.6.90) \r\n Talabat APIs -> StackExchange.Redis (>= 2.6.86)",
-      "libraryId": "StackExchange.Redis",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: StackExchange.Redis from 2.6.90 to 2.6.86. Reference the package directly from the project to select a different version. \r\n Talabat APIs -> Talabat.Service -> Talabat.core -> StackExchange.Redis (>= 2.6.90) \r\n Talabat APIs -> StackExchange.Redis (>= 2.6.86)",
-      "libraryId": "StackExchange.Redis",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

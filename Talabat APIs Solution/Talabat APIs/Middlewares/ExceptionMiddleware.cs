@@ -40,11 +40,11 @@ namespace Talabat_APIs.Middlewares
                 //determine the StatusCode of response
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 // to make options to the json format
-                var Jsonoptions=new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+                var Jsonoptions = new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
                 // to serilize the text into json
                 var jsonResponse = JsonSerializer.Serialize(errorResponse, Jsonoptions);
                 //to overwrite the response  
-                context.Response.WriteAsync(jsonResponse);
+                await context.Response.WriteAsync(jsonResponse);
             }
         }
     }

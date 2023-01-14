@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "G2UBfg6JoivtptO3utOEq99GNCGfPb5L8cCGWFT22ruJd/tBUUjcQNY1x4raBjSX1cnytue+jvimKylPxpsAwA==",
-  "success": false,
+  "dgSpecHash": "Y1GgeJJ4tKOtFBTyNsHI9McbiFG1QmWLt4HdXgP6zUbgJhAUWu30tKOjfS7JGShMM3NFrjKsDAy46qRbNO3nSA==",
+  "success": true,
   "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat APIs\\Talabat APIs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EGYPT\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
@@ -47,7 +47,7 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
-    "C:\\Users\\EGYPT\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\stackexchange.redis\\2.6.90\\stackexchange.redis.2.6.90.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\stripe.net\\41.4.0\\stripe.net.41.4.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
@@ -117,24 +117,5 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: StackExchange.Redis from 2.6.90 to 2.6.86. Reference the package directly from the project to select a different version. \r\n Talabat APIs -> Talabat.Repository -> Talabat.core -> StackExchange.Redis (>= 2.6.90) \r\n Talabat APIs -> StackExchange.Redis (>= 2.6.86)",
-      "libraryId": "StackExchange.Redis",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: StackExchange.Redis from 2.6.90 to 2.6.86. Reference the package directly from the project to select a different version. \r\n Talabat APIs -> Talabat.Service -> Talabat.core -> StackExchange.Redis (>= 2.6.90) \r\n Talabat APIs -> StackExchange.Redis (>= 2.6.86)",
-      "libraryId": "StackExchange.Redis",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

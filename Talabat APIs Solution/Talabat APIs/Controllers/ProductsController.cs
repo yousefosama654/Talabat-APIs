@@ -24,7 +24,7 @@ namespace Talabat_APIs.Controllers
             Mapper = mapper;
             UnitOfWork = unitOfWork;
         }
-    
+        [CachedAttribute(600)]
         [HttpGet]
         // the paramter will be a model state or query string
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts([FromQuery]ProductsSpecParams productsSpecParams)
