@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Talabat.core.Servicecs;
@@ -47,7 +48,7 @@ namespace Talabat_APIs.Helpers
         {
             var keybuilder = new StringBuilder();
             keybuilder.Append(request.Path);
-            foreach (var (key, value) in request.Query)
+            foreach (var (key, value) in request.Query.OrderBy(x=>x.Key))
             {
                 keybuilder.Append($"|{key}-{value}");
             }
