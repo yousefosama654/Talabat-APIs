@@ -96,6 +96,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
        ├──MappingProfiles.cs
        ├──Pagination.cs
        ├──ProductPictureUrlResolver.cs
+       ├──CachedAttribute.cs
     ├──Middlewares
        ├──ExceptionMiddleware.cs
     ├──appsettings.json
