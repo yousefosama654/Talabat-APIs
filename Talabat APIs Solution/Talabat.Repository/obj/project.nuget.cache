@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "37YEtlrzpbheAzxgJ+e3o+eu9eU8euimQS1y/eNt2QO5JOzBqFP4MTnDZSXeE/LTlzf36V8eKD89Ojh01o5Duw==",
+  "dgSpecHash": "l0NE/ND94Om4UzaJVnja4pESpyhadgcAmHTir+CV3X+u2bI8f6ShN6J8uRpc43UNLePc8gG6hTNl1nj2Pf20DA==",
   "success": true,
   "projectFilePath": "D:\\Download\\githubtrial\\Talabat-APIs\\Talabat APIs Solution\\Talabat.Repository\\Talabat.Repository.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,7 @@
     "C:\\Users\\EGYPT\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
-    "C:\\Users\\EGYPT\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
+    "C:\\Users\\EGYPT\\.nuget\\packages\\stackexchange.redis\\2.6.90\\stackexchange.redis.2.6.90.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\stripe.net\\41.4.0\\stripe.net.41.4.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\EGYPT\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
