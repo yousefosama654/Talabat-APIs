@@ -71,7 +71,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    |   ├──BasketController.cs
 |    |   ├──ProductsController.cs
 |    |   ├──OrdersController.cs
-|    |   ├──PaymentsController.cs
+|    |   └──PaymentsController.cs
 |    ├──Dtos
 |    |   ├──LoginDto.cs
 |    |   ├──ProductDto.cs
@@ -82,31 +82,31 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    |   ├──CustomerBasketDto.cs
 |    |   ├──OrderDto.cs
 |    |   ├──OrderToReturnDto.cs
-|    |   ├──OrderItemDto.cs
+|    |   └──OrderItemDto.cs
 |    ├──Errors
 |    |   ├──ApiExceptionError.cs
 |    |   ├──ApiResponse.cs
-|    |   ├──ApiValidationErrorResponse.cs
+|    |   └──ApiValidationErrorResponse.cs
 |    ├──Extensions
 |    |   ├──AppServicesExtension.cs
 |    |   ├──IdentityServicesExtension.cs
 |    |   ├──SwaggerServicesExtension.cs
-|    |   ├──UserManagerExtensions
+|    |   └──UserManagerExtensions
 |    ├──Helpers
 |    |   ├──MappingProfiles.cs
 |    |   ├──Pagination.cs
 |    |   ├──ProductPictureUrlResolver.cs
-|    |   ├──CachedAttribute.cs
+|    |   └──CachedAttribute.cs
 |    ├──Middlewares
-|    |   ├──ExceptionMiddleware.cs
+|    |   └──ExceptionMiddleware.cs
 |    ├──appsettings.json
 |    ├──Program.cs
-|    ├──Startup.cs
+|    └──Startup.cs
 ├── Talabat.Core
 |    ├──Entities
 |    |   ├──Identity
 |    |   |   ├──Address.cs
-|    |   |   ├──AppUser.cs
+|    |   |   └──AppUser.cs
 |    |   ├──BaseEntity.cs
 |    |   ├──BasketItem.cs
 |    |   ├──CustomerBasket.cs
@@ -119,16 +119,16 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    |   |   ├──Order.cs
 |    |   |   ├──OrderItem.cs
 |    |   |   ├──OrderStatus.cs
-|    |   |   ├──ProductItemOrdered.cs
+|    |   |   └──ProductItemOrdered.cs
 |    ├──Repositories
 |    |   ├──IBasketRepository.cs
 |    |   ├──IGenericRepository.cs
-|    |   ├──IUnitOfWork.cs
+|    |   └──IUnitOfWork.cs
 |    ├──Servicecs
 |    |   ├──ITokenService.cs
 |    |   ├──IOrderService.cs
 |    |   ├──IPaymentService.cs
-|    |   ├──IResponseCacheService.cs
+|    |   └──IResponseCacheService.cs
 |    ├──Specification
 |    |   ├──BaseSpecification.cs
 |    |   ├──ISpecification.cs
@@ -136,14 +136,14 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    |   ├──ProductsSpecParams.cs
 |    |   ├──ProductWithBrandAndTypeSpecification.cs
 |    |   ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
-|    |   ├──OrderByPaymentIntentIdSpecification
+|    |   └──OrderByPaymentIntentIdSpecification
 ├── Talabat.Repository
 |    ├──Data
 |    |   ├──Config
-|    |      ├──ProductConfiguration.cs
-|    |      ├──OrderConfiguration.cs
-|    |      ├──OrderItemConfiguration.cs
-|    |      ├──DeliveryMethodConfiguration.cs
+|    |   |   ├──ProductConfiguration.cs
+|    |   |   ├──OrderConfiguration.cs
+|    |   |   ├──OrderItemConfiguration.cs
+|    |   |   └──DeliveryMethodConfiguration.cs
 |    |   ├──Migrations
 |    |   ├──SpecificationEvaluator.cs
 |    |   ├──StoreContext.cs
@@ -152,11 +152,11 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    |   ├──brands.json
 |    |   ├──products.json
 |    |   ├──types.json
-|    |   ├──delivery.json
+|    |   └──delivery.json
 |    ├──Identity
 |    |   ├──Migrations
 |    |   ├──AppIdentityContext.cs
-|    |   ├──AppIdentityContextSeed.cs
+|    |   └──AppIdentityContextSeed.cs
 |    ├──BasketRepository.cs
 |    ├──GenericRepository.cs
 |    ├──UnitOfWork.cs
@@ -164,7 +164,7 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 |    ├──TokenService.cs
 |    ├──OrderService.cs
 |    ├──PaymentService.cs
-|    ├──ResponseCacheService.cs
+|    └──ResponseCacheService.cs
     </pre>
 </div>
 
