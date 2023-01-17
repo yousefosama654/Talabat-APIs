@@ -65,106 +65,106 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
  <div> 
   <pre>
 ├── Talabat APIs
-    ├──Controllers
-       ├──AccountController.cs
-       ├──BaseAPIController.cs
-       ├──BasketController.cs
-       ├──ProductsController.cs
-       ├──OrdersController.cs
-       ├──PaymentsController.cs
-    ├──Dtos
-       ├──LoginDto.cs
-       ├──ProductDto.cs
-       ├──RegisterDto.cs
-       ├──UserDto.cs
-       ├──AddressDto.cs
-       ├──BasketItemDto.cs
-       ├──CustomerBasketDto.cs
-       ├──OrderDto.cs
-       ├──OrderToReturnDto.cs
-       ├──OrderItemDto.cs
-    ├──Errors
-       ├──ApiExceptionError.cs
-       ├──ApiResponse.cs
-       ├──ApiValidationErrorResponse.cs
-    ├──Extensions
-       ├──AppServicesExtension.cs
-       ├──IdentityServicesExtension.cs
-       ├──SwaggerServicesExtension.cs
-       ├──UserManagerExtensions
-    ├──Helpers
-       ├──MappingProfiles.cs
-       ├──Pagination.cs
-       ├──ProductPictureUrlResolver.cs
-       ├──CachedAttribute.cs
-    ├──Middlewares
-       ├──ExceptionMiddleware.cs
-    ├──appsettings.json
-    ├──Program.cs
-    ├──Startup.cs
+|    ├──Controllers
+|    |   ├──AccountController.cs
+|    |   ├──BaseAPIController.cs
+|    |   ├──BasketController.cs
+|    |   ├──ProductsController.cs
+|    |   ├──OrdersController.cs
+|    |   ├──PaymentsController.cs
+|    ├──Dtos
+|    |   ├──LoginDto.cs
+|    |   ├──ProductDto.cs
+|    |   ├──RegisterDto.cs
+|    |   ├──UserDto.cs
+|    |   ├──AddressDto.cs
+|    |   ├──BasketItemDto.cs
+|    |   ├──CustomerBasketDto.cs
+|    |   ├──OrderDto.cs
+|    |   ├──OrderToReturnDto.cs
+|    |   ├──OrderItemDto.cs
+|    ├──Errors
+|    |   ├──ApiExceptionError.cs
+|    |   ├──ApiResponse.cs
+|    |   ├──ApiValidationErrorResponse.cs
+|    ├──Extensions
+|    |   ├──AppServicesExtension.cs
+|    |   ├──IdentityServicesExtension.cs
+|    |   ├──SwaggerServicesExtension.cs
+|    |   ├──UserManagerExtensions
+|    ├──Helpers
+|    |   ├──MappingProfiles.cs
+|    |   ├──Pagination.cs
+|    |   ├──ProductPictureUrlResolver.cs
+|    |   ├──CachedAttribute.cs
+|    ├──Middlewares
+|    |   ├──ExceptionMiddleware.cs
+|    ├──appsettings.json
+|    ├──Program.cs
+|    ├──Startup.cs
 ├── Talabat.Core
-    ├──Entities
-       ├──Identity
-          ├──Address.cs
-          ├──AppUser.cs
-       ├──BaseEntity.cs
-       ├──BasketItem.cs
-       ├──CustomerBasket.cs
-       ├──Product.cs
-       ├──ProductBrand.cs
-       ├──ProductType.cs
-       ├──Order Aggregate
-          ├──Address.cs
-          ├──DeliveryMethod.cs
-          ├──Order.cs
-          ├──OrderItem.cs
-          ├──OrderStatus.cs
-          ├──ProductItemOrdered.cs
-    ├──Repositories
-       ├──IBasketRepository.cs
-       ├──IGenericRepository.cs
-       ├──IUnitOfWork.cs
-    ├──Servicecs
-       ├──ITokenService.cs
-       ├──IOrderService.cs
-       ├──IPaymentService.cs
-       ├──IResponseCacheService.cs
-    ├──Specification
-       ├──BaseSpecification.cs
-       ├──ISpecification.cs
-       ├──ProductSpecificationFilterCount.cs
-       ├──ProductsSpecParams.cs
-       ├──ProductWithBrandAndTypeSpecification.cs
-       ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
-       ├──OrderByPaymentIntentIdSpecification
+|    ├──Entities
+|    |   ├──Identity
+|    |   |   ├──Address.cs
+|    |   |   ├──AppUser.cs
+|    |   ├──BaseEntity.cs
+|    |   ├──BasketItem.cs
+|    |   ├──CustomerBasket.cs
+|    |   ├──Product.cs
+|    |   ├──ProductBrand.cs
+|    |   ├──ProductType.cs
+|    |   ├──Order Aggregate
+|    |   |   ├──Address.cs
+|    |   |   ├──DeliveryMethod.cs
+|    |   |   ├──Order.cs
+|    |   |   ├──OrderItem.cs
+|    |   |   ├──OrderStatus.cs
+|    |   |   ├──ProductItemOrdered.cs
+|    ├──Repositories
+|    |   ├──IBasketRepository.cs
+|    |   ├──IGenericRepository.cs
+|    |   ├──IUnitOfWork.cs
+|    ├──Servicecs
+|    |   ├──ITokenService.cs
+|    |   ├──IOrderService.cs
+|    |   ├──IPaymentService.cs
+|    |   ├──IResponseCacheService.cs
+|    ├──Specification
+|    |   ├──BaseSpecification.cs
+|    |   ├──ISpecification.cs
+|    |   ├──ProductSpecificationFilterCount.cs
+|    |   ├──ProductsSpecParams.cs
+|    |   ├──ProductWithBrandAndTypeSpecification.cs
+|    |   ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
+|    |   ├──OrderByPaymentIntentIdSpecification
 ├── Talabat.Repository
-    ├──Data
-       ├──Config
-          ├──ProductConfiguration.cs
-          ├──OrderConfiguration.cs
-          ├──OrderItemConfiguration.cs
-          ├──DeliveryMethodConfiguration.cs
-       ├──Migrations
-       ├──SpecificationEvaluator.cs
-       ├──StoreContext.cs
-       ├──StoreContextSeed.cs
-    ├──DataSeed
-       ├──brands.json
-       ├──products.json
-       ├──types.json
-       ├──delivery.json
-    ├──Identity
-       ├──Migrations
-       ├──AppIdentityContext.cs
-       ├──AppIdentityContextSeed.cs
-    ├──BasketRepository.cs
-    ├──GenericRepository.cs
-    ├──UnitOfWork.cs
+|    ├──Data
+|    |   ├──Config
+|    |      ├──ProductConfiguration.cs
+|    |      ├──OrderConfiguration.cs
+|    |      ├──OrderItemConfiguration.cs
+|    |      ├──DeliveryMethodConfiguration.cs
+|    |   ├──Migrations
+|    |   ├──SpecificationEvaluator.cs
+|    |   ├──StoreContext.cs
+|    |   ├──StoreContextSeed.cs
+|    ├──DataSeed
+|    |   ├──brands.json
+|    |   ├──products.json
+|    |   ├──types.json
+|    |   ├──delivery.json
+|    ├──Identity
+|    |   ├──Migrations
+|    |   ├──AppIdentityContext.cs
+|    |   ├──AppIdentityContextSeed.cs
+|    ├──BasketRepository.cs
+|    ├──GenericRepository.cs
+|    ├──UnitOfWork.cs
 ├── Talabat.Service
-    ├──TokenService.cs
-    ├──OrderService.cs
-    ├──PaymentService.cs
-    ├──ResponseCacheService.cs
+|    ├──TokenService.cs
+|    ├──OrderService.cs
+|    ├──PaymentService.cs
+|    ├──ResponseCacheService.cs
     </pre>
 </div>
 
