@@ -277,6 +277,16 @@ Talabat returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
+## FAQ
+
+<details>
+  <summary>How to Pay Through Application </summary>
+
+ You should enter any future date and any valid three numbers for `CVC` and the card number can be got by  `Stripe PaymentGateway`.
+</details>
+
+
+
  <h2 align='center'>⭐ Authors ⭐ </h2>
 <!-- readme: collaborators -start -->
 <table  align='center'> 
