@@ -427,13 +427,27 @@ Talabat returns the following status codes in its API:
 ## FAQ
 
 <details>
-  <summary>How to Pay Through Application </summary>
+  <summary>How To Pay Through Application ?</summary>
 
  You should enter any future date and any valid three numbers for `CVC` and the card number can be got by
  `Stripe PaymentGateway`.
 </details>
 
+<details>
+  <summary>What About Perfomance For High Traffic Requests ?</summary>
 
+ The caching is done for only 10 minutes for products loaded before. 
+</details>
+
+
+<details>
+ <summary>How To Connect To Redis ?</summary>
+
+- First Install Redis Software.
+- Open the Command prompt and type this command `redis-server`.
+
+
+</details>
 
  <h2 align='center'>⭐ Authors ⭐ </h2>
 <!-- readme: collaborators -start -->
