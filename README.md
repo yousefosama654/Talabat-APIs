@@ -65,106 +65,106 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
  <div> 
   <pre>
 ├── Talabat APIs
-    ├──Controllers
-       ├──AccountController.cs
-       ├──BaseAPIController.cs
-       ├──BasketController.cs
-       ├──ProductsController.cs
-       ├──OrdersController.cs
-       ├──PaymentsController.cs
-    ├──Dtos
-       ├──LoginDto.cs
-       ├──ProductDto.cs
-       ├──RegisterDto.cs
-       ├──UserDto.cs
-       ├──AddressDto.cs
-       ├──BasketItemDto.cs
-       ├──CustomerBasketDto.cs
-       ├──OrderDto.cs
-       ├──OrderToReturnDto.cs
-       ├──OrderItemDto.cs
-    ├──Errors
-       ├──ApiExceptionError.cs
-       ├──ApiResponse.cs
-       ├──ApiValidationErrorResponse.cs
-    ├──Extensions
-       ├──AppServicesExtension.cs
-       ├──IdentityServicesExtension.cs
-       ├──SwaggerServicesExtension.cs
-       ├──UserManagerExtensions
-    ├──Helpers
-       ├──MappingProfiles.cs
-       ├──Pagination.cs
-       ├──ProductPictureUrlResolver.cs
-       ├──CachedAttribute.cs
-    ├──Middlewares
-       ├──ExceptionMiddleware.cs
-    ├──appsettings.json
-    ├──Program.cs
-    ├──Startup.cs
+|    ├──Controllers
+|    |   ├──AccountController.cs
+|    |   ├──BaseAPIController.cs
+|    |   ├──BasketController.cs
+|    |   ├──ProductsController.cs
+|    |   ├──OrdersController.cs
+|    |   └──PaymentsController.cs
+|    ├──Dtos
+|    |   ├──LoginDto.cs
+|    |   ├──ProductDto.cs
+|    |   ├──RegisterDto.cs
+|    |   ├──UserDto.cs
+|    |   ├──AddressDto.cs
+|    |   ├──BasketItemDto.cs
+|    |   ├──CustomerBasketDto.cs
+|    |   ├──OrderDto.cs
+|    |   ├──OrderToReturnDto.cs
+|    |   └──OrderItemDto.cs
+|    ├──Errors
+|    |   ├──ApiExceptionError.cs
+|    |   ├──ApiResponse.cs
+|    |   └──ApiValidationErrorResponse.cs
+|    ├──Extensions
+|    |   ├──AppServicesExtension.cs
+|    |   ├──IdentityServicesExtension.cs
+|    |   ├──SwaggerServicesExtension.cs
+|    |   └──UserManagerExtensions
+|    ├──Helpers
+|    |   ├──MappingProfiles.cs
+|    |   ├──Pagination.cs
+|    |   ├──ProductPictureUrlResolver.cs
+|    |   └──CachedAttribute.cs
+|    ├──Middlewares
+|    |   └──ExceptionMiddleware.cs
+|    ├──appsettings.json
+|    ├──Program.cs
+|    └──Startup.cs
 ├── Talabat.Core
-    ├──Entities
-       ├──Identity
-          ├──Address.cs
-          ├──AppUser.cs
-       ├──BaseEntity.cs
-       ├──BasketItem.cs
-       ├──CustomerBasket.cs
-       ├──Product.cs
-       ├──ProductBrand.cs
-       ├──ProductType.cs
-       ├──Order Aggregate
-          ├──Address.cs
-          ├──DeliveryMethod.cs
-          ├──Order.cs
-          ├──OrderItem.cs
-          ├──OrderStatus.cs
-          ├──ProductItemOrdered.cs
-    ├──Repositories
-       ├──IBasketRepository.cs
-       ├──IGenericRepository.cs
-       ├──IUnitOfWork.cs
-    ├──Servicecs
-       ├──ITokenService.cs
-       ├──IOrderService.cs
-       ├──IPaymentService.cs
-       ├──IResponseCacheService.cs
-    ├──Specification
-       ├──BaseSpecification.cs
-       ├──ISpecification.cs
-       ├──ProductSpecificationFilterCount.cs
-       ├──ProductsSpecParams.cs
-       ├──ProductWithBrandAndTypeSpecification.cs
-       ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
-       ├──OrderByPaymentIntentIdSpecification
+|    ├──Entities
+|    |   ├──Identity
+|    |   |   ├──Address.cs
+|    |   |   └──AppUser.cs
+|    |   ├──BaseEntity.cs
+|    |   ├──BasketItem.cs
+|    |   ├──CustomerBasket.cs
+|    |   ├──Product.cs
+|    |   ├──ProductBrand.cs
+|    |   ├──ProductType.cs
+|    |   ├──Order Aggregate
+|    |   |   ├──Address.cs
+|    |   |   ├──DeliveryMethod.cs
+|    |   |   ├──Order.cs
+|    |   |   ├──OrderItem.cs
+|    |   |   ├──OrderStatus.cs
+|    |   |   └──ProductItemOrdered.cs
+|    ├──Repositories
+|    |   ├──IBasketRepository.cs
+|    |   ├──IGenericRepository.cs
+|    |   └──IUnitOfWork.cs
+|    ├──Servicecs
+|    |   ├──ITokenService.cs
+|    |   ├──IOrderService.cs
+|    |   ├──IPaymentService.cs
+|    |   └──IResponseCacheService.cs
+|    ├──Specification
+|    |   ├──BaseSpecification.cs
+|    |   ├──ISpecification.cs
+|    |   ├──ProductSpecificationFilterCount.cs
+|    |   ├──ProductsSpecParams.cs
+|    |   ├──ProductWithBrandAndTypeSpecification.cs
+|    |   ├──OrderWithItemsAndDeliveryMethodsSpecification.cs
+|    |   └──OrderByPaymentIntentIdSpecification
 ├── Talabat.Repository
-    ├──Data
-       ├──Config
-          ├──ProductConfiguration.cs
-          ├──OrderConfiguration.cs
-          ├──OrderItemConfiguration.cs
-          ├──DeliveryMethodConfiguration.cs
-       ├──Migrations
-       ├──SpecificationEvaluator.cs
-       ├──StoreContext.cs
-       ├──StoreContextSeed.cs
-    ├──DataSeed
-       ├──brands.json
-       ├──products.json
-       ├──types.json
-       ├──delivery.json
-    ├──Identity
-       ├──Migrations
-       ├──AppIdentityContext.cs
-       ├──AppIdentityContextSeed.cs
-    ├──BasketRepository.cs
-    ├──GenericRepository.cs
-    ├──UnitOfWork.cs
+|    ├──Data
+|    |   ├──Config
+|    |   |   ├──ProductConfiguration.cs
+|    |   |   ├──OrderConfiguration.cs
+|    |   |   ├──OrderItemConfiguration.cs
+|    |   |   └──DeliveryMethodConfiguration.cs
+|    |   ├──Migrations
+|    |   ├──SpecificationEvaluator.cs
+|    |   ├──StoreContext.cs
+|    |   ├──StoreContextSeed.cs
+|    ├──DataSeed
+|    |   ├──brands.json
+|    |   ├──products.json
+|    |   ├──types.json
+|    |   └──delivery.json
+|    ├──Identity
+|    |   ├──Migrations
+|    |   ├──AppIdentityContext.cs
+|    |   └──AppIdentityContextSeed.cs
+|    ├──BasketRepository.cs
+|    ├──GenericRepository.cs
+|    ├──UnitOfWork.cs
 ├── Talabat.Service
-    ├──TokenService.cs
-    ├──OrderService.cs
-    ├──PaymentService.cs
-    ├──ResponseCacheService.cs
+|    ├──TokenService.cs
+|    ├──OrderService.cs
+|    ├──PaymentService.cs
+|    └──ResponseCacheService.cs
     </pre>
 </div>
 
@@ -182,30 +182,42 @@ This is a Talabat Clone Project built in in Onion Architecture Based on the foll
 - `Presentation Layer`
    - It’s the outer-most layer, and keeps peripheral concerns like UI and tests. For a Web application, it represents the Web API or Unit Test project. This layer has an implementation of the dependency injection principle so that the application builds a loosely coupled structure and can communicate to the internal layer via interfaces.
 
-## API Documnetation
-- `Products`
-#### Get all Products
+# API Documnetation
+
+
+## ProductsController
+
+#### Get All Products Brands
 
 ```http
-GET /api/Products?sort=${price}
+GET /api/Products/Brands
+```
+
+#### Get All Products Types  
+
+
+```http
+GET /api/Products/Types
+```
+
+#### Get All Products
+
+```http
+GET /api/Products?sort=${price}&TypeId=${TypeId}&BrandId=${BrandId}&PageSize=${PageSize}&PageIndex=${PageIndex}&search=${Name}
 ```
 
 | Parameter | Type     | Status     | Description                       |
 | :-------- | :------- | :-------   | :-------------------------------- |
-| `sort`    | `string` | **Not Required**| to sort the products by price or name in descending or ascending  order|
+| `sort`    | `string` | **Not Required**| Sort the products by price or name descending or ascending  order|
+| `TypeId`  | `int` | **Not Required**| Id of Type to fetch.|
+| `BrandId` | `int` | **Not Required**| Id of Brand to fetch.|
+| `PageSize`| `int` | **Not Required**| To determine tge page size of products (Pagination).|
+| `PageIndex`| `int` | **Not Required**| To get specific page index. |
+| `Name`    | `string` | **Not Required**|To search for all prducts that include this word in their Name. |
 
 
-#### Get Product By Id
 
-```http
-GET /api/Products/${id}
-```
-
-| Parameter | Type     |  Status   | Description                       |
-| :-------- | :------- |  :------- | :-------------------------------- |
-| `id`      | `int   ` | **Required**| Id of Product to fetch. |
-
-- `Basket`
+## BasketController
 #### Get Basket By Id
  
 ```http
@@ -216,22 +228,31 @@ GET /api/Basket?Id=${id}
 | :-------- | :------- | :-------  | :-------------------------------- |
 | `Id`    | `string` | **Required**|.Id of Basket to fetch.|
 
-#### create or update Basket
+#### Create OR Update Basket
 
 ```http
-POST /api/Basket?Id=${id}
+POST /api/Basket
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `Id`    | `string` | **Required**.of Basket to fetch.|
-| `Name`    | `string` | **Required**.of Basket to fetch.|
-| `Description`    | `string` | **Required**.of Basket to fetch.|
-| `PictureUrl`    | `string` | **Required**.of Basket to fetch.|
-| `Quantity`    | `int` | **Required**.of Basket to fetch.|
-| `Price`    | `decimal` | .of Basket to fetch.|
-| `Brand`    | `string` | **Required**.of Basket to fetch.|
-| `Type`    | `string` | **Required**.of Basket to fetch.| 
+
+```json
+{
+    "id": "basket1",
+    "items": [
+        {
+            "id": 4,
+            "Name": ".NET Black & White Mug",
+            "price": 10,
+            "quantity": 40,
+            "pictureUrl": "https://localhost:5001/images/products/2.png",
+            "brand": ".NET",
+            "type": "USB Memory Stick"
+        }
+    ],
+        "deliveryMethodId": 1
+}
+
+```
 
 
 
@@ -244,6 +265,132 @@ DELETE /api/Basket?Id=${id}
 | Parameter | Type     | Status   |     Description                       |
 | :-------- | :------- | :------- | :--------------------------------     |
 | `Id`    | `string` | **Required**| Id of Basket to be deleted.|
+
+
+
+
+
+
+## AccountController
+
+#### Login
+ 
+```http
+POST /api/Account/login
+```
+
+```json
+{
+    "Email": "yousef@gmail.com",
+    "Password": "Yousef2*"
+}
+```
+
+#### Register
+ 
+```http
+POST /api/Account/register
+```
+
+```json
+{
+    "DisplayName":"yousef",
+    "Email": "yousef@gmail.com",
+    "Password": "Yousef2*",
+    "PhoneNumber": "01552851677"
+}
+```
+
+#### Get Current User
+ 
+```http
+GET /api/Account/GetCurrentUser
+```
+
+
+#### Get Current User Address
+ 
+```http
+GET /api/Account/Address
+```
+
+#### Update Current User Address
+ 
+```http
+PUT /api/Account/UpdateCurrentUserAddress
+```
+
+```json
+{
+    "FirstName": "yousef new",
+    "LastName": "osama new",
+    "street": "42-EltalStreet new",
+    "city": "Warraq-Giza new",
+    "country": "Egypt new"
+}
+```
+
+
+## OrdersController
+
+#### Get All Avaliable Delivery Methods
+
+
+```http
+GET /api/Orders/DeliveryMethods
+```
+
+#### Get All Orders For Current User
+```http
+GET /api/Orders
+```
+
+#### Get Order By ID For Current User
+```http
+GET /api/Orders/1
+```
+
+
+#### Create an Order For Current User
+
+```http
+POST /api/Orders
+```
+```json
+{
+    "basketId": "basket1",
+    "deliveryMethodId": 1,
+    "shippingaddress": {
+        "FirstName": "yousef osama",
+        "LastName": "mohamed",
+        "street": "42-EltalStreet new",
+        "city": "Warraq-Giza new",
+        "country": "Egypt new"
+    }
+}
+```
+
+
+## PaymentsController
+
+### Confirm Payment
+
+- To Confirm Payment with the Gateway and handling stripe Events with success or fail.
+
+```http
+POST /Payments/webhook
+```
+
+### Create Or Update PaymentIntent
+
+```http
+POST /api/Payments?basketId=${basketId}
+```
+
+| Parameter | Type     | Status   |     Description                       |
+| :-------- | :------- | :------- | :--------------------------------     |
+| `Id`    | `string` | **Required**| Id of Basket to be Ordered.|
+
 
 
 ## Responses
@@ -277,9 +424,34 @@ Talabat returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
+## FAQ
+
+<details>
+  <summary>How To Pay Through Application ?</summary>
+
+ You should enter any future date and any valid three numbers for `CVC` and the card number can be got by
+ `Stripe PaymentGateway`.
+</details>
+
+<details>
+  <summary>What About Perfomance For High Traffic Requests ?</summary>
+
+ The caching is done for only 10 minutes for products loaded before. 
+</details>
+
+
+<details>
+ <summary>How To Connect To Redis ?</summary>
+
+- First Install Redis Software.
+- Open the Command prompt and type this command `redis-server`.
+
+
+</details>
+
  <h2 align='center'>⭐ Authors ⭐ </h2>
 <!-- readme: collaborators -start -->
-<table  align='center'> 
+<table align='center'> 
 <tr>
     <td align="center">
         <a href="https://github.com/yousefosama654">
